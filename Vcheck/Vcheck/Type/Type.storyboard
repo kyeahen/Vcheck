@@ -75,9 +75,12 @@
                                     <constraint firstAttribute="width" constant="154" id="KBx-qu-z3M"/>
                                     <constraint firstAttribute="height" constant="43" id="tjb-h6-xYw"/>
                                 </constraints>
-                                <state key="normal" image="category_next_activated_btn">
+                                <state key="normal" image="category_next_inactivated_btn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sMu-Vg-gPW" kind="presentation" id="kWd-QJ-yqE"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vdX-qv-iDB">
                                 <rect key="frame" x="374" y="89" width="6" height="34"/>
@@ -138,6 +141,7 @@
                         <outlet property="imageView1" destination="dgv-87-7wW" id="a0f-WO-qDN"/>
                         <outlet property="imageView2" destination="Vcl-ri-XVY" id="9UO-hI-aIK"/>
                         <outlet property="imageView3" destination="PSS-E5-HKD" id="9fH-5J-FLS"/>
+                        <outlet property="nameTextField" destination="vnY-gM-v0R" id="qSE-CI-6jB"/>
                         <outlet property="nextButton" destination="nvg-a8-3cZ" id="Udn-Mg-JdW"/>
                     </connections>
                 </viewController>
@@ -452,10 +456,10 @@
             </objects>
             <point key="canvasLocation" x="1496" y="78"/>
         </scene>
-        <!--유형1-->
+        <!--유형2-->
         <scene sceneID="HMW-l0-HgA">
             <objects>
-                <viewController storyboardIdentifier="Type2ViewController" title="유형1" id="sMu-Vg-gPW" customClass="Type2ViewController" customModule="Vcheck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Type2ViewController" title="유형2" id="sMu-Vg-gPW" customClass="Type2ViewController" customModule="Vcheck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lqB-W5-kC3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -477,9 +481,12 @@
                                     <constraint firstAttribute="width" constant="154" id="ALJ-3J-naA"/>
                                     <constraint firstAttribute="height" constant="43" id="Zfb-Kc-LzT"/>
                                 </constraints>
-                                <state key="normal" image="category_next_activated_btn">
+                                <state key="normal" image="category_next_inactivated_btn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextAction:" destination="sMu-Vg-gPW" eventType="touchUpInside" id="D5n-CP-L5f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSy-Ud-xYu">
                                 <rect key="frame" x="20" y="792" width="155" height="43"/>
@@ -490,6 +497,9 @@
                                 <state key="normal" image="category_previous_btn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="prevAction:" destination="sMu-Vg-gPW" eventType="touchUpInside" id="TCf-6F-XVv"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ufx-60-KDc">
                                 <rect key="frame" x="374" y="89" width="6" height="34"/>
@@ -551,39 +561,133 @@
                                 <color key="textColor" red="0.2120238841" green="0.22729483249999999" blue="0.23529574280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="category_step_two_card" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-Th-Op9">
-                                <rect key="frame" x="51" y="265" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_step_two_card" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-Th-Op9">
+                                <rect key="frame" x="5" y="295" width="404" height="173"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zen-9x-kXg" appends="YES" id="KR9-iM-oRe"/>
+                                </connections>
                             </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_step_two_card" translatesAutoresizingMaskIntoConstraints="NO" id="JEX-rl-9dK">
+                                <rect key="frame" x="5" y="468" width="404" height="173"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WvJ-lc-fi3" appends="YES" id="shu-bT-SoO"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DWx-2W-jow">
+                                <rect key="frame" x="55" y="346.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ULq-AU-3gf"/>
+                                    <constraint firstAttribute="width" secondItem="DWx-2W-jow" secondAttribute="height" multiplier="1:1" id="aOX-ut-fsI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yGv-Tp-IVA">
+                                <rect key="frame" x="55" y="519.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yGv-Tp-IVA" secondAttribute="height" multiplier="1:1" id="NuT-7o-11K"/>
+                                    <constraint firstAttribute="height" constant="70" id="TWg-Sj-MuI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채식 유형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZw-fq-Dxh">
+                                <rect key="frame" x="145" y="346.5" width="56" height="18"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <color key="textColor" red="0.18448442220687866" green="0.19599765539169312" blue="0.20000094175338745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나만의 유형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONb-Eh-FXw">
+                                <rect key="frame" x="145" y="519.5" width="69" height="18"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <color key="textColor" red="0.1844844222" green="0.1959976554" blue="0.2000009418" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-rF-LDS">
+                                <rect key="frame" x="145" y="372.5" width="209" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="zfg-W9-hiB"/>
+                                </constraints>
+                                <string key="text">비건/락토/오보/락토오보/페스코/폴로 중 
+하나를 선택할 수 있습니다.</string>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <color key="textColor" red="0.50230032205581665" green="0.51734250783920288" blue="0.53333628177642822" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pej-6X-tz2">
+                                <rect key="frame" x="145" y="548.5" width="194" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="F6c-m5-dwH"/>
+                                </constraints>
+                                <string key="text">내가 허용하는 식품군을 직접 선택하여
+나만의 채식 유형을 만들 수 있습니다.</string>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <color key="textColor" red="0.50230032209999997" green="0.51734250780000002" blue="0.53333628180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9801601768" green="0.97282272579999995" blue="0.95686095950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="yyz-Th-Op9" firstAttribute="top" secondItem="4YB-Wc-IrV" secondAttribute="bottom" constant="72" id="2oF-Qn-Vgx"/>
                             <constraint firstItem="zhG-ve-iVE" firstAttribute="top" secondItem="N8b-ZC-jUT" secondAttribute="top" constant="45" id="5Bx-hA-28u"/>
+                            <constraint firstItem="yyz-Th-Op9" firstAttribute="leading" secondItem="DWx-2W-jow" secondAttribute="trailing" constant="-120" id="5Jz-qK-2Zs"/>
+                            <constraint firstItem="JEX-rl-9dK" firstAttribute="top" secondItem="yyz-Th-Op9" secondAttribute="bottom" id="5Kb-cO-235"/>
                             <constraint firstItem="Chp-k9-7Vu" firstAttribute="centerY" secondItem="zhG-ve-iVE" secondAttribute="centerY" id="5yJ-16-Rgk"/>
                             <constraint firstItem="Ufx-60-KDc" firstAttribute="top" secondItem="zhG-ve-iVE" secondAttribute="top" id="DhU-gc-KVS"/>
+                            <constraint firstItem="JEX-rl-9dK" firstAttribute="trailing" secondItem="yyz-Th-Op9" secondAttribute="trailing" id="FTl-6f-2bD"/>
+                            <constraint firstItem="JEX-rl-9dK" firstAttribute="leading" secondItem="yGv-Tp-IVA" secondAttribute="trailing" constant="-120" id="FeQ-n9-zab"/>
+                            <constraint firstItem="N8b-ZC-jUT" firstAttribute="trailing" secondItem="yyz-Th-Op9" secondAttribute="trailing" constant="5" id="FjP-EI-4nV"/>
                             <constraint firstAttribute="bottom" secondItem="wSy-Ud-xYu" secondAttribute="bottom" constant="61" id="I3o-V4-n6h"/>
+                            <constraint firstItem="pej-6X-tz2" firstAttribute="top" secondItem="ONb-Eh-FXw" secondAttribute="bottom" constant="11" id="Lba-lT-vpV"/>
                             <constraint firstItem="N8b-ZC-jUT" firstAttribute="trailing" secondItem="Ufx-60-KDc" secondAttribute="trailing" constant="34" id="Moa-fa-Yg0"/>
+                            <constraint firstItem="pej-6X-tz2" firstAttribute="leading" secondItem="ONb-Eh-FXw" secondAttribute="leading" id="NaX-5N-23d"/>
+                            <constraint firstItem="DWx-2W-jow" firstAttribute="centerY" secondItem="yyz-Th-Op9" secondAttribute="centerY" id="ODp-Kv-dWW"/>
                             <constraint firstItem="eH8-ft-RG8" firstAttribute="top" secondItem="zhG-ve-iVE" secondAttribute="bottom" constant="5" id="OmI-Fi-deC"/>
+                            <constraint firstItem="JEX-rl-9dK" firstAttribute="leading" secondItem="yyz-Th-Op9" secondAttribute="leading" id="Oqj-xC-ppI"/>
+                            <constraint firstItem="yGv-Tp-IVA" firstAttribute="centerY" secondItem="JEX-rl-9dK" secondAttribute="centerY" id="R75-JO-VRZ"/>
                             <constraint firstItem="4YB-Wc-IrV" firstAttribute="top" secondItem="eH8-ft-RG8" secondAttribute="bottom" constant="20" id="Rkd-LZ-5jt"/>
                             <constraint firstItem="Chp-k9-7Vu" firstAttribute="leading" secondItem="zhG-ve-iVE" secondAttribute="trailing" constant="5" id="SAI-m4-DWC"/>
                             <constraint firstItem="4YB-Wc-IrV" firstAttribute="leading" secondItem="zhG-ve-iVE" secondAttribute="leading" id="SOg-NI-0Aa"/>
                             <constraint firstItem="N8b-ZC-jUT" firstAttribute="trailing" secondItem="Ipy-oK-P3y" secondAttribute="trailing" constant="20" id="Tc7-C7-UA2"/>
+                            <constraint firstItem="ONb-Eh-FXw" firstAttribute="top" secondItem="yGv-Tp-IVA" secondAttribute="top" id="WBg-rC-Ne6"/>
+                            <constraint firstItem="PfX-rF-LDS" firstAttribute="leading" secondItem="rZw-fq-Dxh" secondAttribute="leading" id="Wh1-JB-0de"/>
                             <constraint firstItem="Ipy-oK-P3y" firstAttribute="centerY" secondItem="wSy-Ud-xYu" secondAttribute="centerY" id="XlI-Sb-Fvf"/>
+                            <constraint firstItem="rZw-fq-Dxh" firstAttribute="leading" secondItem="DWx-2W-jow" secondAttribute="trailing" constant="20" id="b0z-Zi-dde"/>
+                            <constraint firstItem="yyz-Th-Op9" firstAttribute="leading" secondItem="N8b-ZC-jUT" secondAttribute="leading" constant="5" id="bfA-NO-cmp"/>
                             <constraint firstItem="wSy-Ud-xYu" firstAttribute="leading" secondItem="N8b-ZC-jUT" secondAttribute="leading" constant="20" id="bvy-WB-P3y"/>
+                            <constraint firstItem="ONb-Eh-FXw" firstAttribute="leading" secondItem="yGv-Tp-IVA" secondAttribute="trailing" constant="20" id="jEE-Oc-syp"/>
+                            <constraint firstItem="PfX-rF-LDS" firstAttribute="top" secondItem="rZw-fq-Dxh" secondAttribute="bottom" constant="8" symbolic="YES" id="paB-ML-nq0"/>
                             <constraint firstItem="eH8-ft-RG8" firstAttribute="leading" secondItem="zhG-ve-iVE" secondAttribute="leading" id="rEy-Lw-k8W"/>
+                            <constraint firstItem="rZw-fq-Dxh" firstAttribute="top" secondItem="DWx-2W-jow" secondAttribute="top" id="rSR-aN-gIl"/>
                             <constraint firstItem="zhG-ve-iVE" firstAttribute="leading" secondItem="N8b-ZC-jUT" secondAttribute="leading" constant="36" id="s2f-vR-uSa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N8b-ZC-jUT"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView1" destination="Dxm-Lp-aRs" id="sHW-Fl-543"/>
+                        <outlet property="imageView2" destination="CRB-pc-7pb" id="EFx-4J-xe6"/>
+                        <outlet property="imageView3" destination="TCl-EM-DY4" id="hVf-c7-C4A"/>
+                        <outlet property="nextButton" destination="Ipy-oK-P3y" id="6dG-Iu-43u"/>
+                        <segue destination="d0z-zn-009" kind="unwind" identifier="unwindToType1" unwindAction="unwindToType1WithSegue:" id="ILv-J1-Xn4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qib-B6-i3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d0z-zn-009" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="WvJ-lc-fi3">
+                    <connections>
+                        <action selector="customTypeAction:" destination="sMu-Vg-gPW" id="vLd-V8-HHt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="zen-9x-kXg">
+                    <connections>
+                        <action selector="normalTypeAction:" destination="sMu-Vg-gPW" id="0MS-co-ogu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="794" y="78"/>
+            <point key="canvasLocation" x="792.75362318840587" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
         <image name="category_lactoovo_img" width="375" height="415"/>
-        <image name="category_next_activated_btn" width="154" height="43"/>
+        <image name="category_next_inactivated_btn" width="154" height="43"/>
         <image name="category_previous_btn" width="155" height="43"/>
         <image name="category_step_one_card" width="375" height="173"/>
         <image name="category_step_three_card" width="375" height="511"/>

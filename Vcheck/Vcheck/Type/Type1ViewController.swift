@@ -14,18 +14,33 @@ class Type1ViewController: UIViewController {
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var imageView3: UIImageView!
     
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setView()
+        setCustomView()
     }
     
-    func setView() {
+    func setCustomView() {
         nextButton.makeRounded(cornerRadius: 20)
         imageView1.circleImageView()
         imageView2.circleImageView()
         imageView3.circleImageView()
+        
+        nameTextField.addTarget(self, action: #selector(emptyNameCheck), for: .editingChanged)
     }
+    
+    @objc func emptyNameCheck() {
+        
+        if nameTextField.text == ""{
+            nextButton.setImage(UIImage(named: "category_next_inactivated_btn.png"), for: .normal)
+        } else {
+            nextButton.setImage(UIImage(named: "category_next_activated_btn.png"), for: .normal)
+        }
+    }
+    
+    @IBAction func unwindToType1 (segue : UIStoryboardSegue) {}
     
 
 }
