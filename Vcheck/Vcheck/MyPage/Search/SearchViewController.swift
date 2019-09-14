@@ -21,6 +21,7 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         
         setTableView()
+        setBackBtn()
     }
     
     func setTableView() {

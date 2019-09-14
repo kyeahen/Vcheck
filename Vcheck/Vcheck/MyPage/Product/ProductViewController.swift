@@ -21,6 +21,7 @@ class ProductViewController: UIViewController {
         super.viewDidLoad()
 
         setTableView()
+        setBackBtn()
     }
     
     func setTableView() {
