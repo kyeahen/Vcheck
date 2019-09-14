@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Product View Controller-->
+        <!--관심 상품-->
         <scene sceneID="r4H-cq-ooF">
             <objects>
-                <viewController storyboardIdentifier="ProductViewController" id="LfQ-FH-dAl" customClass="ProductViewController" customModule="Vcheck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductViewController" title="관심 상품" id="LfQ-FH-dAl" customClass="ProductViewController" customModule="Vcheck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8E-OH-9of">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -212,12 +212,6 @@
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_maincoupon_img" translatesAutoresizingMaskIntoConstraints="NO" id="ZJT-hw-RQA">
-                                                                    <rect key="frame" x="5" y="111.5" width="307" height="115"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="115" id="K6U-sm-VPh"/>
-                                                                    </constraints>
-                                                                </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_coupon_icon" translatesAutoresizingMaskIntoConstraints="NO" id="26c-PS-SUN">
                                                                     <rect key="frame" x="25" y="299" width="20" height="15"/>
                                                                     <constraints>
@@ -255,10 +249,8 @@
                                                             <constraints>
                                                                 <constraint firstItem="6uM-tn-vyW" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="22" id="2aJ-UE-Zy2"/>
                                                                 <constraint firstItem="Qko-sR-N5X" firstAttribute="top" secondItem="mDh-w3-2DI" secondAttribute="top" constant="24" id="2aK-jo-4SR"/>
-                                                                <constraint firstItem="ZJT-hw-RQA" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="5" id="8yi-Ii-UTI"/>
                                                                 <constraint firstItem="WAo-nr-2YQ" firstAttribute="centerY" secondItem="hgd-cL-gV1" secondAttribute="centerY" id="Gvb-z9-dwC"/>
                                                                 <constraint firstItem="26c-PS-SUN" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="25" id="M7c-yx-f3u"/>
-                                                                <constraint firstItem="1Dh-xn-AHF" firstAttribute="top" secondItem="ZJT-hw-RQA" secondAttribute="bottom" constant="44" id="MeM-uf-dbo"/>
                                                                 <constraint firstItem="hgd-cL-gV1" firstAttribute="centerY" secondItem="26c-PS-SUN" secondAttribute="centerY" id="NCv-Ll-vzW"/>
                                                                 <constraint firstItem="Qko-sR-N5X" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="22" id="NSx-9t-Q6u"/>
                                                                 <constraint firstAttribute="height" constant="353" id="WSR-Gk-NQi"/>
@@ -270,7 +262,6 @@
                                                                 <constraint firstAttribute="bottom" secondItem="26c-PS-SUN" secondAttribute="bottom" constant="39" id="dZs-wC-6gO"/>
                                                                 <constraint firstItem="1Dh-xn-AHF" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="16" id="dmX-wN-A9D"/>
                                                                 <constraint firstItem="hgd-cL-gV1" firstAttribute="leading" secondItem="26c-PS-SUN" secondAttribute="trailing" constant="11" id="eRa-Bo-Vge"/>
-                                                                <constraint firstAttribute="trailing" secondItem="ZJT-hw-RQA" secondAttribute="trailing" constant="5" id="fQ8-8b-5wP"/>
                                                                 <constraint firstItem="6uM-tn-vyW" firstAttribute="top" secondItem="Qko-sR-N5X" secondAttribute="bottom" constant="10" id="fan-fj-u6H"/>
                                                                 <constraint firstItem="deD-me-oKA" firstAttribute="centerY" secondItem="ief-29-25z" secondAttribute="centerY" id="gjW-Ao-c1S"/>
                                                                 <constraint firstAttribute="trailing" secondItem="1Dh-xn-AHF" secondAttribute="trailing" constant="16" id="hLC-I0-gO1"/>
@@ -634,7 +625,6 @@
         <image name="membership_festival_list_one" width="287" height="89"/>
         <image name="membership_festival_list_three" width="287" height="89"/>
         <image name="membership_festival_list_two" width="287" height="89"/>
-        <image name="membership_maincoupon_img" width="316" height="156"/>
         <image name="membership_mybenefit_arrow_icon" width="12.5" height="12.5"/>
         <image name="membership_rating_explanation_btn" width="119" height="34.5"/>
         <image name="membership_rating_qualification_card" width="343" height="438"/>

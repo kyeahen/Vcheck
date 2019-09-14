@@ -42,6 +42,9 @@
 		22C6B17E232D471500E50164 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B17D232D471500E50164 /* SearchViewController.swift */; };
 		22C6B180232D484300E50164 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B17F232D484300E50164 /* SearchTableViewCell.swift */; };
 		22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B181232D495700E50164 /* SearchPopUpViewController.swift */; };
+		22C6B184232D560400E50164 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B183232D560400E50164 /* ImageSearchViewController.swift */; };
+		22C6B188232D570200E50164 /* ImageSearchReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B187232D570200E50164 /* ImageSearchReviewViewController.swift */; };
+		22C6B18A232D572300E50164 /* ImageSearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B189232D572300E50164 /* ImageSearchDetailViewController.swift */; };
 		22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B0232C975300AD0D25 /* ExtensionControl.swift */; };
 		22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B2232C997D00AD0D25 /* Type1ViewController.swift */; };
 		22D773B5232C9D2800AD0D25 /* Type2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */; };
@@ -89,6 +92,9 @@
 		22C6B17D232D471500E50164 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		22C6B17F232D484300E50164 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		22C6B181232D495700E50164 /* SearchPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPopUpViewController.swift; sourceTree = "<group>"; };
+		22C6B183232D560400E50164 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		22C6B187232D570200E50164 /* ImageSearchReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchReviewViewController.swift; sourceTree = "<group>"; };
+		22C6B189232D572300E50164 /* ImageSearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchDetailViewController.swift; sourceTree = "<group>"; };
 		22D773B0232C975300AD0D25 /* ExtensionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionControl.swift; sourceTree = "<group>"; };
 		22D773B2232C997D00AD0D25 /* Type1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1ViewController.swift; sourceTree = "<group>"; };
 		22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type2ViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +250,9 @@
 			isa = PBXGroup;
 			children = (
 				223FB38E2322086600CCF47F /* ImageSearch.storyboard */,
+				22C6B183232D560400E50164 /* ImageSearchViewController.swift */,
+				22C6B187232D570200E50164 /* ImageSearchReviewViewController.swift */,
+				22C6B189232D572300E50164 /* ImageSearchDetailViewController.swift */,
 			);
 			path = ImageSearch;
 			sourceTree = "<group>";
@@ -416,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D773B5232C9D2800AD0D25 /* Type2ViewController.swift in Sources */,
+				22C6B188232D570200E50164 /* ImageSearchReviewViewController.swift in Sources */,
 				22C6B16A232CFCBD00E50164 /* RatingDataViewController.swift in Sources */,
 				22C6B17A232D2CF300E50164 /* ProductTableViewCell.swift in Sources */,
 				22C6B16C232CFCD100E50164 /* RatingTableViewCell.swift in Sources */,
@@ -429,8 +439,10 @@
 				22C6B170232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift in Sources */,
 				22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */,
 				22C6B172232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift in Sources */,
+				22C6B18A232D572300E50164 /* ImageSearchDetailViewController.swift in Sources */,
 				22C6B17E232D471500E50164 /* SearchViewController.swift in Sources */,
 				22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */,
+				22C6B184232D560400E50164 /* ImageSearchViewController.swift in Sources */,
 				22C6B168232CF5F300E50164 /* Font.swift in Sources */,
 				22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */,
 				22C6B15B232CA6AD00E50164 /* RoundShadowView.swift in Sources */,
