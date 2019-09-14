@@ -20,6 +20,23 @@ extension UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+    //커스텀 백버튼 설정
+    func setBackBtn(){
+        
+        let backBTN = UIBarButtonItem(image: UIImage(named: "back_gray_icon.png"), 
+            style: .plain,
+            target: self,
+            action: #selector(self.pop))
+        
+        navigationItem.leftBarButtonItem = backBTN
+        navigationItem.leftBarButtonItem?.tintColor = #colorLiteral(red: 0.6626245975, green: 0.686796546, blue: 0.703777492, alpha: 1)
+        navigationController?.interactivePopGestureRecognizer?.delegate = self as? UIGestureRecognizerDelegate
+    }
+    
+    @objc func pop(){
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 
