@@ -9,6 +9,19 @@
 import Foundation
 import UIKit
 
+extension UIViewController {
+    
+    //확인 팝업
+    func simpleAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.view.tintColor = #colorLiteral(red: 0, green: 0.7113869786, blue: 0.5025657415, alpha: 1)
+        let okAction = UIAlertAction(title: "확인",style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
+
 
 extension UIView {
     

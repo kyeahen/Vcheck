@@ -100,14 +100,13 @@
 				223FB365232100B700CCF47F /* LaunchScreen.storyboard */,
 				223FB363232100B700CCF47F /* Assets.xcassets */,
 				223FB368232100B700CCF47F /* Info.plist */,
+				22C6B160232CC32700E50164 /* Function */,
 				223FB38A232107C600CCF47F /* Type */,
 				223FB36F2321013300CCF47F /* Home */,
 				223FB3722321038E00CCF47F /* Pay */,
 				223FB38D2322082300CCF47F /* ImageSearch */,
 				223FB36E2321011800CCF47F /* MyBenefits */,
 				223FB373232103A500CCF47F /* MyPage */,
-				22D773B0232C975300AD0D25 /* ExtensionControl.swift */,
-				22C6B15A232CA6AD00E50164 /* RoundShadowView.swift */,
 			);
 			path = Vcheck;
 			sourceTree = "<group>";
@@ -200,6 +199,15 @@
 				223FB38E2322086600CCF47F /* ImageSearch.storyboard */,
 			);
 			path = ImageSearch;
+			sourceTree = "<group>";
+		};
+		22C6B160232CC32700E50164 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				22C6B15A232CA6AD00E50164 /* RoundShadowView.swift */,
+				22D773B0232C975300AD0D25 /* ExtensionControl.swift */,
+			);
+			path = Function;
 			sourceTree = "<group>";
 		};
 		574B63CA66AF2CAE4EC253FF /* Pods */ = {
