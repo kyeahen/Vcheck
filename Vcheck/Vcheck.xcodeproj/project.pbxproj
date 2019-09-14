@@ -36,6 +36,12 @@
 		22C6B170232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B16F232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift */; };
 		22C6B172232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B171232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift */; };
 		22C6B174232D1EAC00E50164 /* MyBenefits3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B173232D1EAC00E50164 /* MyBenefits3CollectionViewCell.swift */; };
+		22C6B176232D2C9000E50164 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B175232D2C9000E50164 /* ProductViewController.swift */; };
+		22C6B17A232D2CF300E50164 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B179232D2CF300E50164 /* ProductTableViewCell.swift */; };
+		22C6B17C232D3DA500E50164 /* ProductPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B17B232D3DA500E50164 /* ProductPopUpViewController.swift */; };
+		22C6B17E232D471500E50164 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B17D232D471500E50164 /* SearchViewController.swift */; };
+		22C6B180232D484300E50164 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B17F232D484300E50164 /* SearchTableViewCell.swift */; };
+		22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B181232D495700E50164 /* SearchPopUpViewController.swift */; };
 		22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B0232C975300AD0D25 /* ExtensionControl.swift */; };
 		22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B2232C997D00AD0D25 /* Type1ViewController.swift */; };
 		22D773B5232C9D2800AD0D25 /* Type2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */; };
@@ -77,6 +83,12 @@
 		22C6B16F232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBenefits1CollectionViewCell.swift; sourceTree = "<group>"; };
 		22C6B171232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBenefits2CollectionViewCell.swift; sourceTree = "<group>"; };
 		22C6B173232D1EAC00E50164 /* MyBenefits3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBenefits3CollectionViewCell.swift; sourceTree = "<group>"; };
+		22C6B175232D2C9000E50164 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		22C6B179232D2CF300E50164 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		22C6B17B232D3DA500E50164 /* ProductPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPopUpViewController.swift; sourceTree = "<group>"; };
+		22C6B17D232D471500E50164 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		22C6B17F232D484300E50164 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		22C6B181232D495700E50164 /* SearchPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPopUpViewController.swift; sourceTree = "<group>"; };
 		22D773B0232C975300AD0D25 /* ExtensionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionControl.swift; sourceTree = "<group>"; };
 		22D773B2232C997D00AD0D25 /* Type1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1ViewController.swift; sourceTree = "<group>"; };
 		22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type2ViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				223FB3862321076100CCF47F /* Search.storyboard */,
+				22C6B17D232D471500E50164 /* SearchViewController.swift */,
+				22C6B17F232D484300E50164 /* SearchTableViewCell.swift */,
+				22C6B181232D495700E50164 /* SearchPopUpViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -205,6 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				223FB3842321075800CCF47F /* Product.storyboard */,
+				22C6B175232D2C9000E50164 /* ProductViewController.swift */,
+				22C6B179232D2CF300E50164 /* ProductTableViewCell.swift */,
+				22C6B17B232D3DA500E50164 /* ProductPopUpViewController.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -399,15 +417,19 @@
 			files = (
 				22D773B5232C9D2800AD0D25 /* Type2ViewController.swift in Sources */,
 				22C6B16A232CFCBD00E50164 /* RatingDataViewController.swift in Sources */,
+				22C6B17A232D2CF300E50164 /* ProductTableViewCell.swift in Sources */,
 				22C6B16C232CFCD100E50164 /* RatingTableViewCell.swift in Sources */,
+				22C6B17C232D3DA500E50164 /* ProductPopUpViewController.swift in Sources */,
 				22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */,
 				22C6B164232CCD7F00E50164 /* CouponTableViewCell.swift in Sources */,
+				22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */,
 				22C6B162232CCD6C00E50164 /* CouponViewController.swift in Sources */,
 				223FB35F232100B400CCF47F /* ViewController.swift in Sources */,
 				22C6B174232D1EAC00E50164 /* MyBenefits3CollectionViewCell.swift in Sources */,
 				22C6B170232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift in Sources */,
 				22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */,
 				22C6B172232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift in Sources */,
+				22C6B17E232D471500E50164 /* SearchViewController.swift in Sources */,
 				22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */,
 				22C6B168232CF5F300E50164 /* Font.swift in Sources */,
 				22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */,
@@ -415,6 +437,8 @@
 				22C6B166232CF42C00E50164 /* RatingViewController.swift in Sources */,
 				22C6B15F232CB84100E50164 /* Type4ViewController.swift in Sources */,
 				22C6B16E232D1BE600E50164 /* MyBenefitsViewController.swift in Sources */,
+				22C6B180232D484300E50164 /* SearchTableViewCell.swift in Sources */,
+				22C6B176232D2C9000E50164 /* ProductViewController.swift in Sources */,
 				223FB35D232100B400CCF47F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

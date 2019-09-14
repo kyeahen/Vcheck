@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zKU-9A-Kxl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k5I-Hp-TEc">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxO-bH-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850.72463768115949" y="79.6875"/>
+            <point key="canvasLocation" x="1758" y="633"/>
         </scene>
         <!--마이 혜택-->
         <scene sceneID="ToD-fA-uYK">
@@ -87,18 +87,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTU-81-XrS">
                                 <rect key="frame" x="0.0" y="375" width="414" height="521"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-HU-g6I">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-HU-g6I">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="521"/>
                                         <color key="backgroundColor" red="0.97227805850000004" green="0.96504896880000002" blue="0.94509559870000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hzZ-o4-XHO">
                                             <size key="itemSize" width="320" height="360"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="21" minY="34" maxX="21" maxY="0.0"/>
+                                            <inset key="sectionInset" minX="21" minY="34" maxX="21" maxY="36"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyBenefits1CollectionViewCell" id="SVF-Vo-P4N" customClass="MyBenefits1CollectionViewCell" customModule="Vcheck" customModuleProvider="target">
-                                                <rect key="frame" x="21" y="80.5" width="320" height="360"/>
+                                                <rect key="frame" x="21" y="79.5" width="320" height="360"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
@@ -169,7 +169,7 @@
                                                 </constraints>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyBenefits2CollectionViewCell" id="eII-YM-Kde" customClass="MyBenefits2CollectionViewCell" customModule="Vcheck" customModuleProvider="target">
-                                                <rect key="frame" x="351" y="80.5" width="320" height="360"/>
+                                                <rect key="frame" x="351" y="79.5" width="320" height="360"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
@@ -293,7 +293,7 @@
                                                 </connections>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyBenefits3CollectionViewCell" id="lfK-cG-71E" customClass="MyBenefits3CollectionViewCell" customModule="Vcheck" customModuleProvider="target">
-                                                <rect key="frame" x="681" y="80.5" width="320" height="360"/>
+                                                <rect key="frame" x="681" y="79.5" width="320" height="360"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
@@ -396,16 +396,16 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFy-O0-e6U">
-                                <rect key="frame" x="0.0" y="88" width="414" height="287"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="331"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프리미엄 컬쳐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VY-Vh-fnD">
-                                <rect key="frame" x="29" y="160" width="147.5" height="32.5"/>
+                                <rect key="frame" x="29" y="116" width="147.5" height="32.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="27"/>
                                 <color key="textColor" red="0.21590030190000001" green="0.2272967696" blue="0.23529565329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월 2회 비건 컬쳐를 누려보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPS-CP-75n">
-                                <rect key="frame" x="29" y="202.5" width="179.5" height="25"/>
+                                <rect key="frame" x="29" y="158.5" width="179.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="ipO-Ts-7jf"/>
                                 </constraints>
@@ -414,7 +414,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mjg-P4-V0d">
-                                <rect key="frame" x="119" y="105" width="176" height="15"/>
+                                <rect key="frame" x="119" y="61" width="176" height="15"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1E-0u-Rbb">
                                         <rect key="frame" x="0.0" y="0.0" width="26" height="15"/>
@@ -455,7 +455,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-uk-hw6">
-                                <rect key="frame" x="29" y="242.5" width="16" height="22"/>
+                                <rect key="frame" x="29" y="198.5" width="119" height="34.5"/>
                                 <state key="normal" image="membership_rating_explanation_btn"/>
                                 <connections>
                                     <segue destination="IbY-dQ-b5d" kind="show" id="kQ5-AG-pwv"/>
@@ -622,26 +622,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JC6-Qa-0GM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42.028985507246382" y="80.357142857142847"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Q5F-MR-ggO">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zKU-9A-Kxl" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e0x-1w-AMZ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="k5I-Hp-TEc" kind="relationship" relationship="rootViewController" id="axc-kY-BKp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9A6-YB-Osg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="40.579710144927539" y="-615.40178571428567"/>
+            <point key="canvasLocation" x="951" y="633"/>
         </scene>
     </scenes>
     <resources>
