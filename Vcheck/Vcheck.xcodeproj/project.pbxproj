@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,7 +23,6 @@
 		223FB38F2322086600CCF47F /* ImageSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FB38E2322086600CCF47F /* ImageSearch.storyboard */; };
 		223FB391232208F600CCF47F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FB390232208F600CCF47F /* Home.storyboard */; };
 		22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B158232CA57D00E50164 /* Type3ViewController.swift */; };
-		22C6B15B232CA6AD00E50164 /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B15A232CA6AD00E50164 /* RoundShadowView.swift */; };
 		22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B15C232CABBD00E50164 /* Type3CollectionViewCell.swift */; };
 		22C6B15F232CB84100E50164 /* Type4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B15E232CB84100E50164 /* Type4ViewController.swift */; };
 		22C6B162232CCD6C00E50164 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B161232CCD6C00E50164 /* CouponViewController.swift */; };
@@ -73,7 +72,6 @@
 		223FB38E2322086600CCF47F /* ImageSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageSearch.storyboard; sourceTree = "<group>"; };
 		223FB390232208F600CCF47F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		22C6B158232CA57D00E50164 /* Type3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type3ViewController.swift; sourceTree = "<group>"; };
-		22C6B15A232CA6AD00E50164 /* RoundShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
 		22C6B15C232CABBD00E50164 /* Type3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type3CollectionViewCell.swift; sourceTree = "<group>"; };
 		22C6B15E232CB84100E50164 /* Type4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type4ViewController.swift; sourceTree = "<group>"; };
 		22C6B161232CCD6C00E50164 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 		22C6B160232CC32700E50164 /* Function */ = {
 			isa = PBXGroup;
 			children = (
-				22C6B15A232CA6AD00E50164 /* RoundShadowView.swift */,
 				22D773B0232C975300AD0D25 /* ExtensionControl.swift */,
 				22C6B167232CF5F300E50164 /* Font.swift */,
 			);
@@ -391,26 +388,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Vcheck/Pods-Vcheck-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/MXPagerView/MXPagerView.framework",
-				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
-				"${BUILT_PRODUCTS_DIR}/MXSegmentedControl/MXSegmentedControl.framework",
-				"${BUILT_PRODUCTS_DIR}/MXSegmentedPager/MXSegmentedPager.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Vcheck/Pods-Vcheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXPagerView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXSegmentedControl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXSegmentedPager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Vcheck/Pods-Vcheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -445,7 +427,6 @@
 				22C6B184232D560400E50164 /* ImageSearchViewController.swift in Sources */,
 				22C6B168232CF5F300E50164 /* Font.swift in Sources */,
 				22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */,
-				22C6B15B232CA6AD00E50164 /* RoundShadowView.swift in Sources */,
 				22C6B166232CF42C00E50164 /* RatingViewController.swift in Sources */,
 				22C6B15F232CB84100E50164 /* Type4ViewController.swift in Sources */,
 				22C6B16E232D1BE600E50164 /* MyBenefitsViewController.swift in Sources */,

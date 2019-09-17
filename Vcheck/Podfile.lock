@@ -15,7 +15,7 @@ DEPENDENCIES:
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - MXPagerView
     - MXParallaxHeader
@@ -33,4 +33,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f4cd3787de06eb7c07ec49b27170189ce2dbd246
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.8.0.beta.2

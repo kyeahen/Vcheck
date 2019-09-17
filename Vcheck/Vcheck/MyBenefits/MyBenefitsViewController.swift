@@ -32,6 +32,13 @@ class MyBenefitsViewController: UIViewController {
         super.viewDidLoad()
 
         setCollectionView()
+        setNavigationBar()
+
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.benefitCollectionView.collectionViewLayout.invalidateLayout()
     }
     
     func setCollectionView() {
@@ -55,7 +62,7 @@ extension MyBenefitsViewController: UICollectionViewDelegate, UICollectionViewDa
         
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyBenefits1CollectionViewCell", for: indexPath) as! MyBenefits1CollectionViewCell
-            
+        
             return cell
             
         } else if indexPath.row == 1 {
@@ -73,6 +80,7 @@ extension MyBenefitsViewController: UICollectionViewDelegate, UICollectionViewDa
         }
     }
     
+
     
 }
 
