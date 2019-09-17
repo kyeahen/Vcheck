@@ -10,4 +10,9 @@ import UIKit
 
 class MyBenefits1CollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var backView: UIView!
+    
+    override func awakeFromNib() {
+
+    }
 }

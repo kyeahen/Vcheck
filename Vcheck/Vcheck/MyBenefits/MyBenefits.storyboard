@@ -104,7 +104,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nke-8N-MFN" customClass="RoundShadowView" customModule="Vcheck" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nke-8N-MFN">
                                                             <rect key="frame" x="1.5" y="3.5" width="317" height="353"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_festival_list_one" translatesAutoresizingMaskIntoConstraints="NO" id="KSH-Hf-XpO">
@@ -148,6 +148,14 @@
                                                                 <constraint firstItem="iwe-NK-71F" firstAttribute="leading" secondItem="qpC-8s-CrP" secondAttribute="leading" id="ut4-et-2mf"/>
                                                                 <constraint firstItem="7Vi-4R-n6r" firstAttribute="top" secondItem="iwe-NK-71F" secondAttribute="bottom" constant="10" id="wpK-tS-LKt"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadows" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_festival_list_two" translatesAutoresizingMaskIntoConstraints="NO" id="pw2-PZ-cue">
                                                             <rect key="frame" x="16.5" y="131" width="287" height="89"/>
@@ -167,6 +175,9 @@
                                                     <constraint firstItem="pw2-PZ-cue" firstAttribute="top" secondItem="qpC-8s-CrP" secondAttribute="bottom" constant="9" id="cZN-9b-h3H"/>
                                                     <constraint firstItem="iwe-NK-71F" firstAttribute="top" secondItem="pw2-PZ-cue" secondAttribute="bottom" constant="7" id="ibr-J0-NjS"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="backView" destination="Nke-8N-MFN" id="gU6-Jw-vaS"/>
+                                                </connections>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyBenefits2CollectionViewCell" id="eII-YM-Kde" customClass="MyBenefits2CollectionViewCell" customModule="Vcheck" customModuleProvider="target">
                                                 <rect key="frame" x="351" y="79.5" width="320" height="360"/>
@@ -179,7 +190,7 @@
                                                             <rect key="frame" x="0.0" y="274" width="320" height="82.5"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-w3-2DI" customClass="RoundShadowView" customModule="Vcheck" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-w3-2DI">
                                                             <rect key="frame" x="1.5" y="3.5" width="317" height="353"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dh-xn-AHF">
@@ -244,11 +255,19 @@
                                                                     <color key="textColor" red="0.30226111410000001" green="0.31741669769999997" blue="0.32941400999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_coupon_one" translatesAutoresizingMaskIntoConstraints="NO" id="2La-bE-U1H">
+                                                                    <rect key="frame" x="5" y="111.5" width="307" height="115"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="115" id="pYv-KX-5WB"/>
+                                                                    </constraints>
+                                                                </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstItem="6uM-tn-vyW" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="22" id="2aJ-UE-Zy2"/>
                                                                 <constraint firstItem="Qko-sR-N5X" firstAttribute="top" secondItem="mDh-w3-2DI" secondAttribute="top" constant="24" id="2aK-jo-4SR"/>
+                                                                <constraint firstAttribute="trailing" secondItem="2La-bE-U1H" secondAttribute="trailing" constant="5" id="FKu-PS-mnA"/>
+                                                                <constraint firstItem="1Dh-xn-AHF" firstAttribute="top" secondItem="2La-bE-U1H" secondAttribute="bottom" constant="44" id="GDL-1c-cN6"/>
                                                                 <constraint firstItem="WAo-nr-2YQ" firstAttribute="centerY" secondItem="hgd-cL-gV1" secondAttribute="centerY" id="Gvb-z9-dwC"/>
                                                                 <constraint firstItem="26c-PS-SUN" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="25" id="M7c-yx-f3u"/>
                                                                 <constraint firstItem="hgd-cL-gV1" firstAttribute="centerY" secondItem="26c-PS-SUN" secondAttribute="centerY" id="NCv-Ll-vzW"/>
@@ -261,12 +280,20 @@
                                                                 <constraint firstAttribute="trailing" secondItem="WAo-nr-2YQ" secondAttribute="trailing" constant="24" id="a2r-SH-ZWd"/>
                                                                 <constraint firstAttribute="bottom" secondItem="26c-PS-SUN" secondAttribute="bottom" constant="39" id="dZs-wC-6gO"/>
                                                                 <constraint firstItem="1Dh-xn-AHF" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="16" id="dmX-wN-A9D"/>
+                                                                <constraint firstItem="2La-bE-U1H" firstAttribute="leading" secondItem="mDh-w3-2DI" secondAttribute="leading" constant="5" id="eON-3O-KU4"/>
                                                                 <constraint firstItem="hgd-cL-gV1" firstAttribute="leading" secondItem="26c-PS-SUN" secondAttribute="trailing" constant="11" id="eRa-Bo-Vge"/>
                                                                 <constraint firstItem="6uM-tn-vyW" firstAttribute="top" secondItem="Qko-sR-N5X" secondAttribute="bottom" constant="10" id="fan-fj-u6H"/>
                                                                 <constraint firstItem="deD-me-oKA" firstAttribute="centerY" secondItem="ief-29-25z" secondAttribute="centerY" id="gjW-Ao-c1S"/>
                                                                 <constraint firstAttribute="trailing" secondItem="1Dh-xn-AHF" secondAttribute="trailing" constant="16" id="hLC-I0-gO1"/>
                                                                 <constraint firstItem="ief-29-25z" firstAttribute="leading" secondItem="deD-me-oKA" secondAttribute="trailing" constant="1" id="ti9-WU-HXa"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadows" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </view>
                                                     </subviews>
                                                 </view>
@@ -290,7 +317,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTE-OU-xsK" customClass="RoundShadowView" customModule="Vcheck" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTE-OU-xsK">
                                                             <rect key="frame" x="1.5" y="3.5" width="317" height="353"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzz-4M-qv6">
@@ -358,6 +385,13 @@
                                                                 <constraint firstAttribute="width" constant="317" id="oTX-te-e49"/>
                                                                 <constraint firstAttribute="bottom" secondItem="pzz-4M-qv6" secondAttribute="bottom" constant="82" id="pi4-BD-hzH"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadows" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_donation_img" translatesAutoresizingMaskIntoConstraints="NO" id="gXi-eU-X0x">
                                                             <rect key="frame" x="74.5" y="108" width="171" height="113"/>
@@ -620,6 +654,7 @@
         <image name="home_double_check_illust" width="18.5" height="23"/>
         <image name="membership_coupon_five" width="374.5" height="181"/>
         <image name="membership_coupon_icon" width="20" height="15"/>
+        <image name="membership_coupon_one" width="374.5" height="181"/>
         <image name="membership_donation_icon" width="20" height="17.5"/>
         <image name="membership_donation_img" width="171.5" height="113"/>
         <image name="membership_festival_list_one" width="287" height="89"/>

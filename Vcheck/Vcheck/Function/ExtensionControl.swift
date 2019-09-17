@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+extension Int{
+    func getPortionalLength() -> CGFloat {
+        let screenSize: CGRect = UIScreen.main.bounds
+        return (CGFloat(self)/375)*screenSize.width
+    }
+}
+
 extension UIViewController {
     
     //확인 팝업
@@ -37,6 +44,16 @@ extension UIViewController {
     @objc func pop(){
         self.navigationController?.popViewController(animated: true)
     }
+    
+    //네비게이션 바 투명하게 하는 함수
+    func setNavigationBar() {
+        let bar: UINavigationBar! = self.navigationController?.navigationBar
+        
+        bar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        bar.shadowImage = UIImage()
+        bar.backgroundColor = UIColor.clear
+    }
+    
 }
 
 
@@ -76,6 +93,48 @@ extension UIView {
         let backgroundCGColor = backgroundColor?.cgColor
         backgroundColor = nil
         layer.backgroundColor =  backgroundCGColor
+    }
+    
+    @IBInspectable var dropShadows: Bool {
+        set{
+            if newValue {
+                layer.shadowColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+                layer.shadowOpacity = 0.7
+                layer.shadowRadius = 2
+                layer.shadowOffset = CGSize(width: 0, height: 3)
+                layer.shadowOffset = CGSize.zero
+            } else {
+                layer.shadowColor = UIColor.clear.cgColor
+                layer.shadowOpacity = 0
+                layer.shadowRadius = 0
+                layer.shadowOffset = CGSize.zero
+            }
+        }
+        get {
+            return layer.shadowOpacity > 0
+        }
+    }
+    
+    // Corner radius
+    @IBInspectable var circle: Bool {
+        get {
+            return layer.cornerRadius == self.bounds.width * 0.5
+        }
+        set {
+            if newValue == true {
+                self.cornerRadius = self.bounds.width * 0.5
+            }
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return self.layer.cornerRadius
+        }
+        
+        set {
+            self.layer.cornerRadius = newValue
+        }
     }
 }
 
