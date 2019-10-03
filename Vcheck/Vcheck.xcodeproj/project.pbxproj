@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15DCEC6C233C5380006028EC /* PayCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC6B233C5380006028EC /* PayCardCollectionViewCell.swift */; };
+		15DCEC6E233C5407006028EC /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC6D233C5407006028EC /* PayViewController.swift */; };
+		15DCEC70233C6423006028EC /* PayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC6F233C6423006028EC /* PayCardViewController.swift */; };
+		15DCEC72233C642F006028EC /* PayCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC71233C642F006028EC /* PayCompleteViewController.swift */; };
+		15DCEC74233C6461006028EC /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC73233C6461006028EC /* QRViewController.swift */; };
 		223FB35D232100B400CCF47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FB35C232100B400CCF47F /* AppDelegate.swift */; };
 		223FB35F232100B400CCF47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FB35E232100B400CCF47F /* ViewController.swift */; };
 		223FB362232100B400CCF47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FB360232100B400CCF47F /* Main.storyboard */; };
@@ -47,13 +52,15 @@
 		22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B0232C975300AD0D25 /* ExtensionControl.swift */; };
 		22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B2232C997D00AD0D25 /* Type1ViewController.swift */; };
 		22D773B5232C9D2800AD0D25 /* Type2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */; };
-		8B1AFD208DAE9218028195DD /* Pods_Vcheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D12F65B615E6B7F3B35A632 /* Pods_Vcheck.framework */; };
+		E8E460CB91EB48675E558456 /* Pods_Vcheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B037FB7760BACC6751FA4B9A /* Pods_Vcheck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00B59EEF2BD26D98F41AB07C /* Pods-Vcheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vcheck.debug.xcconfig"; path = "Target Support Files/Pods-Vcheck/Pods-Vcheck.debug.xcconfig"; sourceTree = "<group>"; };
-		0E9E766759C3F5A8C851FFD2 /* Pods-Vcheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vcheck.release.xcconfig"; path = "Target Support Files/Pods-Vcheck/Pods-Vcheck.release.xcconfig"; sourceTree = "<group>"; };
-		1D12F65B615E6B7F3B35A632 /* Pods_Vcheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vcheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15DCEC6B233C5380006028EC /* PayCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		15DCEC6D233C5407006028EC /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		15DCEC6F233C6423006028EC /* PayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardViewController.swift; sourceTree = "<group>"; };
+		15DCEC71233C642F006028EC /* PayCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCompleteViewController.swift; sourceTree = "<group>"; };
+		15DCEC73233C6461006028EC /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		223FB359232100B400CCF47F /* Vcheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vcheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223FB35C232100B400CCF47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223FB35E232100B400CCF47F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +103,9 @@
 		22D773B0232C975300AD0D25 /* ExtensionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionControl.swift; sourceTree = "<group>"; };
 		22D773B2232C997D00AD0D25 /* Type1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1ViewController.swift; sourceTree = "<group>"; };
 		22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type2ViewController.swift; sourceTree = "<group>"; };
+		B037FB7760BACC6751FA4B9A /* Pods_Vcheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vcheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C0DBAA1934D14192126F55 /* Pods-Vcheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vcheck.debug.xcconfig"; path = "Target Support Files/Pods-Vcheck/Pods-Vcheck.debug.xcconfig"; sourceTree = "<group>"; };
+		DC98CD58CDEBD5A399AE94F1 /* Pods-Vcheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vcheck.release.xcconfig"; path = "Target Support Files/Pods-Vcheck/Pods-Vcheck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1AFD208DAE9218028195DD /* Pods_Vcheck.framework in Frameworks */,
+				E8E460CB91EB48675E558456 /* Pods_Vcheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +126,7 @@
 				223FB35B232100B400CCF47F /* Vcheck */,
 				223FB35A232100B400CCF47F /* Products */,
 				574B63CA66AF2CAE4EC253FF /* Pods */,
-				B88E3241FC7917453CD4DB40 /* Frameworks */,
+				E03D0C077F7A10087E7F2099 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +187,11 @@
 			isa = PBXGroup;
 			children = (
 				223FB374232103B300CCF47F /* Pay.storyboard */,
+				15DCEC6B233C5380006028EC /* PayCardCollectionViewCell.swift */,
+				15DCEC6D233C5407006028EC /* PayViewController.swift */,
+				15DCEC6F233C6423006028EC /* PayCardViewController.swift */,
+				15DCEC71233C642F006028EC /* PayCompleteViewController.swift */,
+				15DCEC73233C6461006028EC /* QRViewController.swift */,
 			);
 			path = Pay;
 			sourceTree = "<group>";
@@ -267,16 +282,16 @@
 		574B63CA66AF2CAE4EC253FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				00B59EEF2BD26D98F41AB07C /* Pods-Vcheck.debug.xcconfig */,
-				0E9E766759C3F5A8C851FFD2 /* Pods-Vcheck.release.xcconfig */,
+				C9C0DBAA1934D14192126F55 /* Pods-Vcheck.debug.xcconfig */,
+				DC98CD58CDEBD5A399AE94F1 /* Pods-Vcheck.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B88E3241FC7917453CD4DB40 /* Frameworks */ = {
+		E03D0C077F7A10087E7F2099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D12F65B615E6B7F3B35A632 /* Pods_Vcheck.framework */,
+				B037FB7760BACC6751FA4B9A /* Pods_Vcheck.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -288,11 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 223FB36B232100B700CCF47F /* Build configuration list for PBXNativeTarget "Vcheck" */;
 			buildPhases = (
-				1DB524961B00E092839EF20E /* [CP] Check Pods Manifest.lock */,
+				474A0ACCD7B94F113B31ED72 /* [CP] Check Pods Manifest.lock */,
 				223FB355232100B400CCF47F /* Sources */,
 				223FB356232100B400CCF47F /* Frameworks */,
 				223FB357232100B400CCF47F /* Resources */,
-				85C2B992BECAAB8DE85230A9 /* [CP] Embed Pods Frameworks */,
+				CF379BFFEA9C5EB88496617C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,7 +375,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DB524961B00E092839EF20E /* [CP] Check Pods Manifest.lock */ = {
+		474A0ACCD7B94F113B31ED72 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,7 +397,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85C2B992BECAAB8DE85230A9 /* [CP] Embed Pods Frameworks */ = {
+		CF379BFFEA9C5EB88496617C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,6 +426,8 @@
 				22C6B16A232CFCBD00E50164 /* RatingDataViewController.swift in Sources */,
 				22C6B17A232D2CF300E50164 /* ProductTableViewCell.swift in Sources */,
 				22C6B16C232CFCD100E50164 /* RatingTableViewCell.swift in Sources */,
+				15DCEC6C233C5380006028EC /* PayCardCollectionViewCell.swift in Sources */,
+				15DCEC6E233C5407006028EC /* PayViewController.swift in Sources */,
 				22C6B17C232D3DA500E50164 /* ProductPopUpViewController.swift in Sources */,
 				22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */,
 				22C6B164232CCD7F00E50164 /* CouponTableViewCell.swift in Sources */,
@@ -423,10 +440,13 @@
 				22C6B172232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift in Sources */,
 				22C6B18A232D572300E50164 /* ImageSearchDetailViewController.swift in Sources */,
 				22C6B17E232D471500E50164 /* SearchViewController.swift in Sources */,
+				15DCEC74233C6461006028EC /* QRViewController.swift in Sources */,
+				15DCEC72233C642F006028EC /* PayCompleteViewController.swift in Sources */,
 				22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */,
 				22C6B184232D560400E50164 /* ImageSearchViewController.swift in Sources */,
 				22C6B168232CF5F300E50164 /* Font.swift in Sources */,
 				22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */,
+				15DCEC70233C6423006028EC /* PayCardViewController.swift in Sources */,
 				22C6B166232CF42C00E50164 /* RatingViewController.swift in Sources */,
 				22C6B15F232CB84100E50164 /* Type4ViewController.swift in Sources */,
 				22C6B16E232D1BE600E50164 /* MyBenefitsViewController.swift in Sources */,
@@ -576,11 +596,11 @@
 		};
 		223FB36C232100B700CCF47F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00B59EEF2BD26D98F41AB07C /* Pods-Vcheck.debug.xcconfig */;
+			baseConfigurationReference = C9C0DBAA1934D14192126F55 /* Pods-Vcheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S3H456VQ6Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Vcheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,11 +615,11 @@
 		};
 		223FB36D232100B700CCF47F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E9E766759C3F5A8C851FFD2 /* Pods-Vcheck.release.xcconfig */;
+			baseConfigurationReference = DC98CD58CDEBD5A399AE94F1 /* Pods-Vcheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S3H456VQ6Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Vcheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
