@@ -553,6 +553,7 @@
                         <outlet property="benefitCollectionView" destination="e7C-HU-g6I" id="xpc-MP-Z3E"/>
                         <outlet property="imageView" destination="Ba7-d6-WVb" id="X7O-3L-xk2"/>
                         <outlet property="msgLabel" destination="dPS-CP-75n" id="Eeg-mG-BRK"/>
+                        <outlet property="nameLabel" destination="Ju8-uy-13z" id="j2H-ia-BEb"/>
                         <outlet property="titleLabel" destination="1VY-Vh-fnD" id="DGp-pK-WIh"/>
                     </connections>
                 </viewController>

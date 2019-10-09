@@ -11,16 +11,15 @@ import UIKit
 class MyPageViewController: UIViewController {
 
     @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initBackView()
         setNavigationBar()
-        
-
-        
-        
+        nameLabel.text = UserDefaults.standard.string(forKey: "name") ?? ""
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,8 +44,22 @@ class MyPageViewController: UIViewController {
     }
     
     @IBAction func interest(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            let vc = UIStoryboard(name: "Search", bundle: nil).instantiateViewController(identifier: "SearchViewController") as! SearchViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     @IBAction func search(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            let vc = UIStoryboard(name: "Product", bundle: nil).instantiateViewController(identifier: "ProductViewController") as! ProductViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     @IBAction func setting(_ sender: Any) {
     }

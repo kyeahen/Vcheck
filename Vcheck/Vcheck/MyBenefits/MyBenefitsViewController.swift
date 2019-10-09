@@ -28,8 +28,8 @@ class MyBenefitsViewController: UIViewController {
     @IBOutlet weak var msgLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var nameLabel: UILabel!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,6 +42,8 @@ class MyBenefitsViewController: UIViewController {
 
           self.imageView.alpha = 1;
         }))
+        
+        nameLabel.text = UserDefaults.standard.string(forKey: "name") ?? ""
 
     }
     

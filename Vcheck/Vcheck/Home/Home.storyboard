@@ -124,6 +124,9 @@
                                                     <constraint firstAttribute="height" constant="54" id="TwQ-ja-G8Q"/>
                                                 </constraints>
                                                 <state key="normal" image="imagesearch_btn"/>
+                                                <connections>
+                                                    <action selector="imageSearchAction:" destination="SI0-5G-Rsv" eventType="touchUpInside" id="5gp-zA-3Pn"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_newproduct_part" translatesAutoresizingMaskIntoConstraints="NO" id="cRE-SC-T4t">
                                                 <rect key="frame" x="19.5" y="1125" width="375" height="565"/>
@@ -425,8 +428,11 @@
                         <outlet property="interestCard" destination="cRE-SC-T4t" id="qOx-dD-07N"/>
                         <outlet property="interestCollectionView" destination="pod-yo-gFb" id="2Pe-Cr-8cr"/>
                         <outlet property="lastCollectionView" destination="Efc-4G-Utk" id="rgO-kv-Hbg"/>
+                        <outlet property="nameLabel" destination="vGc-nC-7di" id="1WR-pQ-eST"/>
                         <outlet property="pageControl" destination="FlP-si-zUr" id="0a7-Dt-lof"/>
+                        <outlet property="productNameLabel" destination="EWk-OF-gsq" id="LWf-Ez-yxH"/>
                         <outlet property="recentCollectionView" destination="tTb-YL-Sx5" id="Vit-z2-m4S"/>
+                        <outlet property="searchNameLabel" destination="quv-Nv-VZF" id="nqV-2a-dzv"/>
                         <outlet property="topBannerCollectionView" destination="1zK-I8-ipa" id="UOH-c7-Nep"/>
                     </connections>
                 </viewController>
