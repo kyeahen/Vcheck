@@ -17,19 +17,16 @@ class SearchPopUpViewController: UIViewController {
     
     var index : Int = 0
     
-    let imageArr : [UIImage] = [UIImage(named: "home_recentsearch_one.png")!, UIImage(named: "home_recentsearch_two.png")!, UIImage(named: "home_recentsearch_three.png")!, UIImage(named: "home_recentsearch_four.png")!, UIImage(named: "home_recentsearch_five.png")!]
-    let titleArr : [String] = [
-        """
-    아몬드브리즈
-    오리지널
-    """,
-    "포테토칩 샤워크림 어니언",
+     let imageArr : [UIImage] = [UIImage(named: "home_recentsearch_one.png")!, UIImage(named: "home_recentsearch_two.png")!, UIImage(named: "home_recentsearch_three.png")!, UIImage(named: "home_recentsearch_five.png")!, UIImage(named: "home_recentsearch_six.png")!]
+    
+    let titleArr : [String] = ["아몬드 밀크",
+    "머드쉐이크 밀크",
     """
     수미칩
     오리지널
     """, "한 입 김말이", "튀김 칼국수"]
     
-    let brandArr : [String] = ["매일", "올가", "농심", "올가", "삼양"]
+     let brandArr : [String] = ["137 degrees", "인디펜던트리쿼", "농심", "올가", "삼양"]
 
     
     override func viewDidLoad() {
@@ -48,18 +45,18 @@ class SearchPopUpViewController: UIViewController {
     
     func showAnimate()
     {
-        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-        self.view.alpha = 0.0;
+//        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        self.view.alpha = 0.0
         UIView.animate(withDuration: 0.25, animations: {
             self.view.alpha = 1.0
-            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+//            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         });
     }
     
     func removeAnimate()
     {
         UIView.animate(withDuration: 0.25, animations: {
-            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+//            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.view.alpha = 0.0;
         }, completion:{(finished : Bool)  in
             if (finished)

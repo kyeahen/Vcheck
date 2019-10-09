@@ -10,4 +10,12 @@ import UIKit
 
 class MyBenefits2CollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var couponButton: UIButton!
+    
+    var actionClosure : (() -> Void)? = nil
+
+    @IBAction func couponAction(_ sender: UIButton) {
+        
+        self.actionClosure?()
+    }
 }

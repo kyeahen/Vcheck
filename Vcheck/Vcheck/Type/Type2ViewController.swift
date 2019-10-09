@@ -10,6 +10,8 @@ import UIKit
 
 class Type2ViewController: UIViewController {
     
+    @IBOutlet weak var veganButton: UIButton!
+    @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var imageView1: UIImageView!
@@ -21,7 +23,9 @@ class Type2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nextButton.isEnabled = false
+        nextButton.isUserInteractionEnabled = false
+        
+        setCusomView()
     }
     
     func setCusomView() {
@@ -29,43 +33,56 @@ class Type2ViewController: UIViewController {
         imageView1.circleImageView()
         imageView2.circleImageView()
         imageView3.circleImageView()
+        
+        setNavigationBar()
+        self.navigationItem.hidesBackButton = true
     }
     
-    @IBAction func normalTypeAction(_ sender: UITapGestureRecognizer) {
-        
-        selectedType = 1
-        nextButton.isEnabled = true
-        nextButton.setImage(UIImage(named: "category_next_activated_btn.png"), for: .normal)
+    @IBAction func choiceAction(_ sender: UIButton) {
+        if sender == veganButton {
+            veganButton.setImage(UIImage(named: "category_step_two_card_type"), for: .normal)
+            myButton.setImage(UIImage(named: "category_step_two_card_mytype_inactivated"), for: .normal)
+            veganButton.tag = 1
+            myButton.tag = 0
+            nextButton.isUserInteractionEnabled = true
+            nextButton.setImage(UIImage(named: "category_next_activated_btn"), for: .normal)
+
+        } else {
+            veganButton.setImage(UIImage(named: "category_step_two_card_type_inactivated"), for: .normal)
+            myButton.setImage(UIImage(named: "category_step_two_card_mytype"), for: .normal)
+
+            veganButton.tag = 0
+            myButton.tag = 1
+            nextButton.isUserInteractionEnabled = true
+            nextButton.setImage(UIImage(named: "category_next_activated_btn"), for: .normal)
+
+        }
     }
     
-    @IBAction func customTypeAction(_ sender: UITapGestureRecognizer) {
-        
-        selectedType = 2
-        nextButton.isEnabled = true
-        nextButton.setImage(UIImage(named: "category_next_activated_btn.png"), for: .normal)
-    }
+    
     
     @IBAction func nextAction(_ sender: UIButton) {
         
-        if selectedType == 1 {
+        if veganButton.tag == 1 {
             let normalVC = UIStoryboard(name: "Type", bundle: nil).instantiateViewController(withIdentifier: "Type3ViewController") as! Type3ViewController
+            normalVC.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(normalVC, animated: true)
             
-            self.present(normalVC, animated: true, completion: nil)
-            
-        } else if selectedType == 2 {
-            
+        } else if myButton.tag == 1 {
             let customVC = UIStoryboard(name: "Type", bundle: nil).instantiateViewController(withIdentifier: "Type4ViewController") as! Type4ViewController
             
-            self.present(customVC, animated: true, completion: nil)
+            customVC.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(customVC, animated: true)
             
         } else {
-           nextButton.isEnabled = false
+            nextButton.isUserInteractionEnabled = false
         }
     }
     
     @IBAction func prevAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "unwindToType1", sender: self)
+        self.navigationController?.popViewController(animated: true)
     }
+    
     
     
 

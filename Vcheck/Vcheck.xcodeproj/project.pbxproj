@@ -26,6 +26,7 @@
 		15DCEC70233C6423006028EC /* PayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC6F233C6423006028EC /* PayCardViewController.swift */; };
 		15DCEC72233C642F006028EC /* PayCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC71233C642F006028EC /* PayCompleteViewController.swift */; };
 		15DCEC74233C6461006028EC /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC73233C6461006028EC /* QRViewController.swift */; };
+		22068A382347975E0091DFA9 /* ImageSearchXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22068A372347975E0091DFA9 /* ImageSearchXViewController.swift */; };
 		223FB35D232100B400CCF47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FB35C232100B400CCF47F /* AppDelegate.swift */; };
 		223FB35F232100B400CCF47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FB35E232100B400CCF47F /* ViewController.swift */; };
 		223FB362232100B400CCF47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FB360232100B400CCF47F /* Main.storyboard */; };
@@ -41,6 +42,10 @@
 		223FB38C232107D700CCF47F /* Type.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FB38B232107D700CCF47F /* Type.storyboard */; };
 		223FB38F2322086600CCF47F /* ImageSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FB38E2322086600CCF47F /* ImageSearch.storyboard */; };
 		223FB391232208F600CCF47F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FB390232208F600CCF47F /* Home.storyboard */; };
+		2251DBBA234753C90090183F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBB9234753C90090183F /* Product.swift */; };
+		2251DBBD234753FA0090183F /* ImageSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBBC234753FA0090183F /* ImageSearchService.swift */; };
+		2251DBBF234754500090183F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBBE234754500090183F /* APIService.swift */; };
+		2251DBC1234755790090183F /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBC0234755790090183F /* testViewController.swift */; };
 		22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B158232CA57D00E50164 /* Type3ViewController.swift */; };
 		22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B15C232CABBD00E50164 /* Type3CollectionViewCell.swift */; };
 		22C6B15F232CB84100E50164 /* Type4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B15E232CB84100E50164 /* Type4ViewController.swift */; };
@@ -66,6 +71,7 @@
 		22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B0232C975300AD0D25 /* ExtensionControl.swift */; };
 		22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B2232C997D00AD0D25 /* Type1ViewController.swift */; };
 		22D773B5232C9D2800AD0D25 /* Type2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */; };
+		22E509E8234617C70026643A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E509E7234617C70026643A /* TabBarViewController.swift */; };
 		E8E460CB91EB48675E558456 /* Pods_Vcheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B037FB7760BACC6751FA4B9A /* Pods_Vcheck.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +95,7 @@
 		15DCEC6F233C6423006028EC /* PayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardViewController.swift; sourceTree = "<group>"; };
 		15DCEC71233C642F006028EC /* PayCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCompleteViewController.swift; sourceTree = "<group>"; };
 		15DCEC73233C6461006028EC /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		22068A372347975E0091DFA9 /* ImageSearchXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchXViewController.swift; sourceTree = "<group>"; };
 		223FB359232100B400CCF47F /* Vcheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vcheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223FB35C232100B400CCF47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223FB35E232100B400CCF47F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +113,10 @@
 		223FB38B232107D700CCF47F /* Type.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Type.storyboard; sourceTree = "<group>"; };
 		223FB38E2322086600CCF47F /* ImageSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageSearch.storyboard; sourceTree = "<group>"; };
 		223FB390232208F600CCF47F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2251DBB9234753C90090183F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2251DBBC234753FA0090183F /* ImageSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchService.swift; sourceTree = "<group>"; };
+		2251DBBE234754500090183F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2251DBC0234755790090183F /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		22C6B158232CA57D00E50164 /* Type3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type3ViewController.swift; sourceTree = "<group>"; };
 		22C6B15C232CABBD00E50164 /* Type3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type3CollectionViewCell.swift; sourceTree = "<group>"; };
 		22C6B15E232CB84100E50164 /* Type4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type4ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +142,7 @@
 		22D773B0232C975300AD0D25 /* ExtensionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionControl.swift; sourceTree = "<group>"; };
 		22D773B2232C997D00AD0D25 /* Type1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1ViewController.swift; sourceTree = "<group>"; };
 		22D773B4232C9D2800AD0D25 /* Type2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type2ViewController.swift; sourceTree = "<group>"; };
+		22E509E7234617C70026643A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B037FB7760BACC6751FA4B9A /* Pods_Vcheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vcheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C0DBAA1934D14192126F55 /* Pods-Vcheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vcheck.debug.xcconfig"; path = "Target Support Files/Pods-Vcheck/Pods-Vcheck.debug.xcconfig"; sourceTree = "<group>"; };
 		DC98CD58CDEBD5A399AE94F1 /* Pods-Vcheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vcheck.release.xcconfig"; path = "Target Support Files/Pods-Vcheck/Pods-Vcheck.release.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +309,7 @@
 				22C6B158232CA57D00E50164 /* Type3ViewController.swift */,
 				22C6B15C232CABBD00E50164 /* Type3CollectionViewCell.swift */,
 				22C6B15E232CB84100E50164 /* Type4ViewController.swift */,
+				22E509E7234617C70026643A /* TabBarViewController.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -304,12 +317,25 @@
 		223FB38D2322082300CCF47F /* ImageSearch */ = {
 			isa = PBXGroup;
 			children = (
+				2251DBBB234753E90090183F /* Utill */,
 				223FB38E2322086600CCF47F /* ImageSearch.storyboard */,
 				22C6B183232D560400E50164 /* ImageSearchViewController.swift */,
 				22C6B187232D570200E50164 /* ImageSearchReviewViewController.swift */,
 				22C6B189232D572300E50164 /* ImageSearchDetailViewController.swift */,
+				2251DBC0234755790090183F /* testViewController.swift */,
+				22068A372347975E0091DFA9 /* ImageSearchXViewController.swift */,
 			);
 			path = ImageSearch;
+			sourceTree = "<group>";
+		};
+		2251DBBB234753E90090183F /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				2251DBB9234753C90090183F /* Product.swift */,
+				2251DBBC234753FA0090183F /* ImageSearchService.swift */,
+				2251DBBE234754500090183F /* APIService.swift */,
+			);
+			path = Utill;
 			sourceTree = "<group>";
 		};
 		22C6B160232CC32700E50164 /* Function */ = {
@@ -474,16 +500,21 @@
 				22C6B16A232CFCBD00E50164 /* RatingDataViewController.swift in Sources */,
 				22C6B17A232D2CF300E50164 /* ProductTableViewCell.swift in Sources */,
 				22C6B16C232CFCD100E50164 /* RatingTableViewCell.swift in Sources */,
+				2251DBBA234753C90090183F /* Product.swift in Sources */,
 				15DCEC6C233C5380006028EC /* PayCardCollectionViewCell.swift in Sources */,
 				15DCEC6E233C5407006028EC /* PayViewController.swift in Sources */,
 				22C6B17C232D3DA500E50164 /* ProductPopUpViewController.swift in Sources */,
+				2251DBBD234753FA0090183F /* ImageSearchService.swift in Sources */,
 				22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */,
+				2251DBC1234755790090183F /* testViewController.swift in Sources */,
 				22C6B164232CCD7F00E50164 /* CouponTableViewCell.swift in Sources */,
 				22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */,
 				154A52FA2348714C00D0F996 /* InterestViewController.swift in Sources */,
 				151647D623486A210012C40D /* InterestCollectionViewCell.swift in Sources */,
 				22C6B162232CCD6C00E50164 /* CouponViewController.swift in Sources */,
 				223FB35F232100B400CCF47F /* ViewController.swift in Sources */,
+				22068A382347975E0091DFA9 /* ImageSearchXViewController.swift in Sources */,
+				22E509E8234617C70026643A /* TabBarViewController.swift in Sources */,
 				22C6B174232D1EAC00E50164 /* MyBenefits3CollectionViewCell.swift in Sources */,
 				22C6B170232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift in Sources */,
 				22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */,
@@ -507,6 +538,7 @@
 				22C6B16E232D1BE600E50164 /* MyBenefitsViewController.swift in Sources */,
 				22C6B180232D484300E50164 /* SearchTableViewCell.swift in Sources */,
 				22C6B176232D2C9000E50164 /* ProductViewController.swift in Sources */,
+				2251DBBF234754500090183F /* APIService.swift in Sources */,
 				223FB35D232100B400CCF47F /* AppDelegate.swift in Sources */,
 				156F1DC123486FE1009042F5 /* LastCollectionViewCell.swift in Sources */,
 			);
