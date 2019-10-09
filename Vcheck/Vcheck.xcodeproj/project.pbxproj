@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151647CA23459FDA0012C40D /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647C923459FDA0012C40D /* FoodCollectionViewCell.swift */; };
+		151647CC23459FEF0012C40D /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647CB23459FEF0012C40D /* FoodViewController.swift */; };
+		151647D0234850410012C40D /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647CF234850410012C40D /* FoodTableViewCell.swift */; };
+		151647D2234860B50012C40D /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D1234860B50012C40D /* HomeBannerCollectionViewCell.swift */; };
+		151647D42348665A0012C40D /* RecentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D32348665A0012C40D /* RecentCollectionViewCell.swift */; };
+		151647D623486A210012C40D /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D523486A210012C40D /* InterestCollectionViewCell.swift */; };
+		154A52FA2348714C00D0F996 /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A52F92348714C00D0F996 /* InterestViewController.swift */; };
+		156F1DC123486FE1009042F5 /* LastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F1DC023486FE1009042F5 /* LastCollectionViewCell.swift */; };
+		15B2EEAE234DB6F200A6F9D7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2EEAD234DB6F200A6F9D7 /* SplashViewController.swift */; };
+		15B2EEB4234DB77800A6F9D7 /* splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 15B2EEAF234DB77700A6F9D7 /* splash.gif */; };
+		15B2EEB5234DB77800A6F9D7 /* filterloading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 15B2EEB0234DB77800A6F9D7 /* filterloading.gif */; };
+		15B2EEB6234DB77800A6F9D7 /* imgloading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 15B2EEB1234DB77800A6F9D7 /* imgloading.gif */; };
+		15B2EEB7234DB77800A6F9D7 /* o.gif in Resources */ = {isa = PBXBuildFile; fileRef = 15B2EEB2234DB77800A6F9D7 /* o.gif */; };
+		15B2EEB8234DB77800A6F9D7 /* x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 15B2EEB3234DB77800A6F9D7 /* x.gif */; };
 		15DCEC6C233C5380006028EC /* PayCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC6B233C5380006028EC /* PayCardCollectionViewCell.swift */; };
 		15DCEC6E233C5407006028EC /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC6D233C5407006028EC /* PayViewController.swift */; };
 		15DCEC70233C6423006028EC /* PayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DCEC6F233C6423006028EC /* PayCardViewController.swift */; };
@@ -56,6 +70,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151647C923459FDA0012C40D /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		151647CB23459FEF0012C40D /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		151647CF234850410012C40D /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		151647D1234860B50012C40D /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		151647D32348665A0012C40D /* RecentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCollectionViewCell.swift; sourceTree = "<group>"; };
+		151647D523486A210012C40D /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		154A52F92348714C00D0F996 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
+		156F1DC023486FE1009042F5 /* LastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCollectionViewCell.swift; sourceTree = "<group>"; };
+		15B2EEAD234DB6F200A6F9D7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		15B2EEAF234DB77700A6F9D7 /* splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash.gif; sourceTree = "<group>"; };
+		15B2EEB0234DB77800A6F9D7 /* filterloading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = filterloading.gif; sourceTree = "<group>"; };
+		15B2EEB1234DB77800A6F9D7 /* imgloading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imgloading.gif; sourceTree = "<group>"; };
+		15B2EEB2234DB77800A6F9D7 /* o.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = o.gif; sourceTree = "<group>"; };
+		15B2EEB3234DB77800A6F9D7 /* x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = x.gif; sourceTree = "<group>"; };
 		15DCEC6B233C5380006028EC /* PayCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		15DCEC6D233C5407006028EC /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		15DCEC6F233C6423006028EC /* PayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardViewController.swift; sourceTree = "<group>"; };
@@ -144,8 +172,14 @@
 				223FB35C232100B400CCF47F /* AppDelegate.swift */,
 				223FB360232100B400CCF47F /* Main.storyboard */,
 				223FB365232100B700CCF47F /* LaunchScreen.storyboard */,
+				15B2EEAD234DB6F200A6F9D7 /* SplashViewController.swift */,
 				223FB363232100B700CCF47F /* Assets.xcassets */,
 				223FB368232100B700CCF47F /* Info.plist */,
+				15B2EEB0234DB77800A6F9D7 /* filterloading.gif */,
+				15B2EEB1234DB77800A6F9D7 /* imgloading.gif */,
+				15B2EEB2234DB77800A6F9D7 /* o.gif */,
+				15B2EEAF234DB77700A6F9D7 /* splash.gif */,
+				15B2EEB3234DB77800A6F9D7 /* x.gif */,
 				22C6B160232CC32700E50164 /* Function */,
 				223FB38A232107C600CCF47F /* Type */,
 				223FB36F2321013300CCF47F /* Home */,
@@ -177,8 +211,16 @@
 		223FB36F2321013300CCF47F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				223FB35E232100B400CCF47F /* ViewController.swift */,
 				223FB390232208F600CCF47F /* Home.storyboard */,
+				223FB35E232100B400CCF47F /* ViewController.swift */,
+				151647CB23459FEF0012C40D /* FoodViewController.swift */,
+				151647C923459FDA0012C40D /* FoodCollectionViewCell.swift */,
+				151647CF234850410012C40D /* FoodTableViewCell.swift */,
+				151647D1234860B50012C40D /* HomeBannerCollectionViewCell.swift */,
+				151647D32348665A0012C40D /* RecentCollectionViewCell.swift */,
+				151647D523486A210012C40D /* InterestCollectionViewCell.swift */,
+				156F1DC023486FE1009042F5 /* LastCollectionViewCell.swift */,
+				154A52F92348714C00D0F996 /* InterestViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -364,10 +406,15 @@
 				223FB3872321076100CCF47F /* Search.storyboard in Resources */,
 				223FB38C232107D700CCF47F /* Type.storyboard in Resources */,
 				223FB38F2322086600CCF47F /* ImageSearch.storyboard in Resources */,
+				15B2EEB7234DB77800A6F9D7 /* o.gif in Resources */,
+				15B2EEB8234DB77800A6F9D7 /* x.gif in Resources */,
 				223FB3712321015D00CCF47F /* MyBenefits.storyboard in Resources */,
 				223FB375232103B300CCF47F /* Pay.storyboard in Resources */,
 				223FB3892321076900CCF47F /* Setting.storyboard in Resources */,
+				15B2EEB4234DB77800A6F9D7 /* splash.gif in Resources */,
 				223FB362232100B400CCF47F /* Main.storyboard in Resources */,
+				15B2EEB6234DB77800A6F9D7 /* imgloading.gif in Resources */,
+				15B2EEB5234DB77800A6F9D7 /* filterloading.gif in Resources */,
 				223FB3832321074F00CCF47F /* Review.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +470,7 @@
 			files = (
 				22D773B5232C9D2800AD0D25 /* Type2ViewController.swift in Sources */,
 				22C6B188232D570200E50164 /* ImageSearchReviewViewController.swift in Sources */,
+				151647CC23459FEF0012C40D /* FoodViewController.swift in Sources */,
 				22C6B16A232CFCBD00E50164 /* RatingDataViewController.swift in Sources */,
 				22C6B17A232D2CF300E50164 /* ProductTableViewCell.swift in Sources */,
 				22C6B16C232CFCD100E50164 /* RatingTableViewCell.swift in Sources */,
@@ -432,17 +480,24 @@
 				22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */,
 				22C6B164232CCD7F00E50164 /* CouponTableViewCell.swift in Sources */,
 				22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */,
+				154A52FA2348714C00D0F996 /* InterestViewController.swift in Sources */,
+				151647D623486A210012C40D /* InterestCollectionViewCell.swift in Sources */,
 				22C6B162232CCD6C00E50164 /* CouponViewController.swift in Sources */,
 				223FB35F232100B400CCF47F /* ViewController.swift in Sources */,
 				22C6B174232D1EAC00E50164 /* MyBenefits3CollectionViewCell.swift in Sources */,
 				22C6B170232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift in Sources */,
 				22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */,
+				151647D0234850410012C40D /* FoodTableViewCell.swift in Sources */,
 				22C6B172232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift in Sources */,
+				151647D2234860B50012C40D /* HomeBannerCollectionViewCell.swift in Sources */,
 				22C6B18A232D572300E50164 /* ImageSearchDetailViewController.swift in Sources */,
 				22C6B17E232D471500E50164 /* SearchViewController.swift in Sources */,
 				15DCEC74233C6461006028EC /* QRViewController.swift in Sources */,
 				15DCEC72233C642F006028EC /* PayCompleteViewController.swift in Sources */,
 				22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */,
+				151647CA23459FDA0012C40D /* FoodCollectionViewCell.swift in Sources */,
+				15B2EEAE234DB6F200A6F9D7 /* SplashViewController.swift in Sources */,
+				151647D42348665A0012C40D /* RecentCollectionViewCell.swift in Sources */,
 				22C6B184232D560400E50164 /* ImageSearchViewController.swift in Sources */,
 				22C6B168232CF5F300E50164 /* Font.swift in Sources */,
 				22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */,
@@ -453,6 +508,7 @@
 				22C6B180232D484300E50164 /* SearchTableViewCell.swift in Sources */,
 				22C6B176232D2C9000E50164 /* ProductViewController.swift in Sources */,
 				223FB35D232100B400CCF47F /* AppDelegate.swift in Sources */,
+				156F1DC123486FE1009042F5 /* LastCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FTJ86BZW9N;
 				INFOPLIST_FILE = Vcheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,7 +675,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FTJ86BZW9N;
 				INFOPLIST_FILE = Vcheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

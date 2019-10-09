@@ -8,6 +8,8 @@ target 'Vcheck' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'MXSegmentedPager'
+    pod 'CTSlidingUpPanel'
+    pod 'SwiftGifOrigin'
 
   # Pods for Vcheck
 
