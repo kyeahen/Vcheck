@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lastCollectionView: UICollectionView!
     
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var interestCard: UIImageView!
     
     let banners: [UIImage] = [
         UIImage(named: "home_top_banner_one_img")!,
@@ -67,6 +68,9 @@ class ViewController: UIViewController {
         setNavigationBarClear()
         initCollectionView()
         
+        //interestCollectionView.layer.zPosition = 0
+        interestCard.layer.zPosition = 3
+                
         pageControl.numberOfPages = interests.count
         pageControl.currentPage = 0
         
@@ -172,11 +176,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         }else if collectionView == interestCollectionView{
             let cell = interestCollectionView.dequeueReusableCell(withReuseIdentifier: "InterestCollectionViewCell", for: indexPath) as! InterestCollectionViewCell
             cell.interestImage.image = interests[indexPath.row]
-            
+            cell.interestImage.cornerRadius = cell.interestImage.frame.height/2
+
             return cell
         }else{
             let cell = lastCollectionView.dequeueReusableCell(withReuseIdentifier: "LastCollectionViewCell", for: indexPath) as! LastCollectionViewCell
             cell.lastImage.image = lasts[indexPath.row]
+            
             
             return cell
         }
@@ -189,7 +195,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         if collectionView == topBannerCollectionView{
             return CGSize(width: 375, height: 194)
         }else if collectionView == recentCollectionView{
-            return CGSize(width: 120, height: 125)
+            return CGSize(width: 110, height: 125)
         }else if collectionView == interestCollectionView{
             return CGSize(width: 414, height: 316)
         }else{
