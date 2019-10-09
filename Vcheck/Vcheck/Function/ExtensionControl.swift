@@ -99,19 +99,31 @@ extension UIView {
         set{
             if newValue {
                 layer.shadowColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-                layer.shadowOpacity = 0.7
-                layer.shadowRadius = 2
+                layer.shadowOpacity = 0.5
+//                layer.shadowRadius = 5
                 layer.shadowOffset = CGSize(width: 0, height: 3)
                 layer.shadowOffset = CGSize.zero
             } else {
                 layer.shadowColor = UIColor.clear.cgColor
                 layer.shadowOpacity = 0
-                layer.shadowRadius = 0
+//                layer.shadowRadius = 0
                 layer.shadowOffset = CGSize.zero
             }
         }
         get {
             return layer.shadowOpacity > 0
+        }
+    }
+    
+    // Corner radius
+    @IBInspectable var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            
+            layer.shadowRadius = newValue
+            
         }
     }
     

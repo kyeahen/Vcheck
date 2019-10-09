@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k5I-Hp-TEc">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k5I-Hp-TEc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -149,11 +147,13 @@
                                                                 <constraint firstItem="7Vi-4R-n6r" firstAttribute="top" secondItem="iwe-NK-71F" secondAttribute="bottom" constant="10" id="wpK-tS-LKt"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadows" value="YES"/>
                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadows" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="2"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
@@ -255,10 +255,10 @@
                                                                     <color key="textColor" red="0.30226111410000001" green="0.31741669769999997" blue="0.32941400999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_coupon_one" translatesAutoresizingMaskIntoConstraints="NO" id="2La-bE-U1H">
-                                                                    <rect key="frame" x="5" y="111.5" width="307" height="115"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_maincoupon_img" translatesAutoresizingMaskIntoConstraints="NO" id="2La-bE-U1H">
+                                                                    <rect key="frame" x="5" y="110.5" width="307" height="116"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="115" id="pYv-KX-5WB"/>
+                                                                        <constraint firstAttribute="width" secondItem="2La-bE-U1H" secondAttribute="height" multiplier="307:116" id="Kj7-cN-DIp"/>
                                                                     </constraints>
                                                                 </imageView>
                                                             </subviews>
@@ -293,21 +293,34 @@
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="10"/>
                                                                 </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbq-2b-lzt">
+                                                            <rect key="frame" x="224" y="274.5" width="88" height="77.5"/>
+                                                            <connections>
+                                                                <action selector="couponAction:" destination="eII-YM-Kde" eventType="touchUpInside" id="EW6-Vc-AQL"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </view>
                                                 <gestureRecognizers/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="Mbq-2b-lzt" secondAttribute="trailing" id="LAc-s0-wbu"/>
                                                     <constraint firstItem="mDh-w3-2DI" firstAttribute="centerY" secondItem="eII-YM-Kde" secondAttribute="centerY" id="PPt-pS-u0E"/>
+                                                    <constraint firstItem="Mbq-2b-lzt" firstAttribute="leading" secondItem="hgd-cL-gV1" secondAttribute="trailing" constant="118" id="St7-ys-75v"/>
                                                     <constraint firstAttribute="trailing" secondItem="CtO-F9-3HE" secondAttribute="trailing" id="T67-hA-3QK"/>
                                                     <constraint firstItem="mDh-w3-2DI" firstAttribute="centerX" secondItem="eII-YM-Kde" secondAttribute="centerX" id="WXR-N9-iKI"/>
                                                     <constraint firstItem="CtO-F9-3HE" firstAttribute="bottom" secondItem="mDh-w3-2DI" secondAttribute="bottom" id="X3S-6V-n9K"/>
+                                                    <constraint firstItem="Mbq-2b-lzt" firstAttribute="top" secondItem="1Dh-xn-AHF" secondAttribute="bottom" id="XJ0-4o-z5d"/>
                                                     <constraint firstItem="CtO-F9-3HE" firstAttribute="top" secondItem="1Dh-xn-AHF" secondAttribute="top" id="q7d-VF-8ki"/>
                                                     <constraint firstItem="CtO-F9-3HE" firstAttribute="leading" secondItem="eII-YM-Kde" secondAttribute="leading" id="rSf-7E-viF"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="Mbq-2b-lzt" secondAttribute="bottom" id="wSV-Yv-c5V"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="Jvy-fi-X29" appends="YES" id="Zti-6Z-Adg"/>
+                                                    <outlet property="couponButton" destination="Mbq-2b-lzt" id="N2R-gN-bZb"/>
                                                 </connections>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyBenefits3CollectionViewCell" id="lfK-cG-71E" customClass="MyBenefits3CollectionViewCell" customModule="Vcheck" customModuleProvider="target">
@@ -329,6 +342,9 @@
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기부 단체" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwN-7Y-yYa">
                                                                     <rect key="frame" x="22" y="24" width="56" height="18"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="18" id="20o-SA-Wsy"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                                     <color key="textColor" red="0.21590030190000001" green="0.2272967696" blue="0.23529565329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
@@ -342,6 +358,9 @@
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 기부 금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eM-Z1-4ru">
                                                                     <rect key="frame" x="56" y="298.5" width="74.5" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="16" id="YyI-cX-mfX"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                                     <color key="textColor" red="0.52587306499999997" green="0.54479146000000001" blue="0.56078732009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
@@ -360,6 +379,9 @@
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환경/동물권 운동 단체를 선정하여 기부합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyy-bt-clW">
                                                                     <rect key="frame" x="22" y="52" width="232" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="16" id="Eem-kK-i84"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                                     <color key="textColor" red="0.52979469300000004" green="0.55270594360000003" blue="0.56470847130000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
@@ -374,6 +396,7 @@
                                                                 <constraint firstItem="6eM-Z1-4ru" firstAttribute="leading" secondItem="uAh-FG-Jz8" secondAttribute="trailing" constant="11" id="Nf1-jw-SG5"/>
                                                                 <constraint firstItem="zCL-qm-Odh" firstAttribute="leading" secondItem="8BJ-xT-w7Q" secondAttribute="trailing" constant="1" id="OeX-JZ-4Nf"/>
                                                                 <constraint firstItem="8BJ-xT-w7Q" firstAttribute="centerY" secondItem="6eM-Z1-4ru" secondAttribute="centerY" id="RNe-z9-h3Q"/>
+                                                                <constraint firstItem="6eM-Z1-4ru" firstAttribute="top" secondItem="pzz-4M-qv6" secondAttribute="bottom" constant="27.5" id="Rqx-2s-ayf"/>
                                                                 <constraint firstItem="qwN-7Y-yYa" firstAttribute="leading" secondItem="VTE-OU-xsK" secondAttribute="leading" constant="22" id="YGu-tS-U5z"/>
                                                                 <constraint firstItem="6eM-Z1-4ru" firstAttribute="centerY" secondItem="uAh-FG-Jz8" secondAttribute="centerY" id="YhM-7C-4dZ"/>
                                                                 <constraint firstAttribute="height" constant="353" id="aPZ-0l-Lff"/>
@@ -390,6 +413,9 @@
                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="2"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
@@ -410,6 +436,11 @@
                                                 </constraints>
                                             </collectionViewCell>
                                         </cells>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9801601768" green="0.97282272579999995" blue="0.95686095950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -480,17 +511,25 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-uk-hw6">
-                                <rect key="frame" x="29" y="198.5" width="119" height="34.5"/>
+                                <rect key="frame" x="29" y="198.5" width="238" height="69"/>
                                 <state key="normal" image="membership_rating_explanation_btn"/>
                                 <connections>
                                     <segue destination="IbY-dQ-b5d" kind="show" id="kQ5-AG-pwv"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membership_festival_illust_one" translatesAutoresizingMaskIntoConstraints="NO" id="Ba7-d6-WVb">
+                                <rect key="frame" x="219" y="179" width="205" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="Hpa-Y0-XfL"/>
+                                    <constraint firstAttribute="width" constant="205" id="g1p-jH-V57"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aZf-Wv-tat" firstAttribute="trailing" secondItem="qTU-81-XrS" secondAttribute="trailing" id="2t4-v9-bE8"/>
                             <constraint firstItem="1VY-Vh-fnD" firstAttribute="top" secondItem="mjg-P4-V0d" secondAttribute="bottom" constant="40" id="7eS-C7-yvG"/>
+                            <constraint firstItem="Ba7-d6-WVb" firstAttribute="trailing" secondItem="aZf-Wv-tat" secondAttribute="trailing" constant="10" id="E7f-DG-jyq"/>
                             <constraint firstItem="qTU-81-XrS" firstAttribute="leading" secondItem="aZf-Wv-tat" secondAttribute="leading" id="HMQ-BZ-n58"/>
                             <constraint firstItem="dPS-CP-75n" firstAttribute="leading" secondItem="aZf-Wv-tat" secondAttribute="leading" constant="29" id="Mw5-N8-Tf9"/>
                             <constraint firstItem="qTU-81-XrS" firstAttribute="top" secondItem="pFy-O0-e6U" secondAttribute="bottom" id="NVb-g3-Fyi"/>
@@ -500,6 +539,7 @@
                             <constraint firstItem="9ES-uk-hw6" firstAttribute="top" secondItem="dPS-CP-75n" secondAttribute="bottom" constant="15" id="cmh-Sy-Wyv"/>
                             <constraint firstItem="9ES-uk-hw6" firstAttribute="leading" secondItem="dPS-CP-75n" secondAttribute="leading" id="ePY-dz-8eJ"/>
                             <constraint firstItem="aZf-Wv-tat" firstAttribute="trailing" secondItem="pFy-O0-e6U" secondAttribute="trailing" id="iHg-Dk-7Yo"/>
+                            <constraint firstItem="e7C-HU-g6I" firstAttribute="top" secondItem="Ba7-d6-WVb" secondAttribute="bottom" id="lys-YE-5oi"/>
                             <constraint firstItem="pFy-O0-e6U" firstAttribute="leading" secondItem="aZf-Wv-tat" secondAttribute="leading" id="mR6-bZ-cqH"/>
                             <constraint firstItem="mjg-P4-V0d" firstAttribute="top" secondItem="aZf-Wv-tat" secondAttribute="top" constant="17" id="n6G-4C-eh8"/>
                             <constraint firstItem="qTU-81-XrS" firstAttribute="height" secondItem="k7i-cW-yJ9" secondAttribute="height" multiplier="472:812" id="o14-TD-far"/>
@@ -511,16 +551,12 @@
                     <navigationItem key="navigationItem" title="마이 혜택" id="DBp-eF-zaN"/>
                     <connections>
                         <outlet property="benefitCollectionView" destination="e7C-HU-g6I" id="xpc-MP-Z3E"/>
+                        <outlet property="imageView" destination="Ba7-d6-WVb" id="X7O-3L-xk2"/>
                         <outlet property="msgLabel" destination="dPS-CP-75n" id="Eeg-mG-BRK"/>
                         <outlet property="titleLabel" destination="1VY-Vh-fnD" id="DGp-pK-WIh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CN7-XM-ulv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Jvy-fi-X29">
-                    <connections>
-                        <action selector="couponAction:" destination="k5I-Hp-TEc" id="2FX-TL-wYc"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="950.72463768115949" y="-615.40178571428567"/>
         </scene>
@@ -529,7 +565,7 @@
             <objects>
                 <viewController storyboardIdentifier="RatingViewController" title="등급 안내" id="IbY-dQ-b5d" customClass="RatingViewController" customModule="Vcheck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZMc-Qs-GoL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.97227805850000004" green="0.96504896880000002" blue="0.94509559870000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="yq9-DY-c0D"/>
@@ -583,6 +619,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Vl-2b-Pqo">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" red="0.97227805850000004" green="0.96504896880000002" blue="0.94509559870000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Llk-s6-h8Q">
+                                    <rect key="frame" x="0.0" y="399" width="414" height="47"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.97223931550979614" green="0.96511799097061157" blue="0.9411734938621521" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RatingTableViewCell" rowHeight="343" id="oQ7-Dh-94X" customClass="RatingTableViewCell" customModule="Vcheck" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="343"/>
@@ -651,15 +692,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home_double_check_illust" width="18.5" height="23"/>
+        <image name="home_double_check_illust" width="21" height="21"/>
         <image name="membership_coupon_five" width="374.5" height="181"/>
         <image name="membership_coupon_icon" width="20" height="15"/>
-        <image name="membership_coupon_one" width="374.5" height="181"/>
         <image name="membership_donation_icon" width="20" height="17.5"/>
         <image name="membership_donation_img" width="171.5" height="113"/>
+        <image name="membership_festival_illust_one" width="205" height="196"/>
         <image name="membership_festival_list_one" width="287" height="89"/>
         <image name="membership_festival_list_three" width="287" height="89"/>
         <image name="membership_festival_list_two" width="287" height="89"/>
+        <image name="membership_maincoupon_img" width="276" height="116"/>
         <image name="membership_mybenefit_arrow_icon" width="12.5" height="12.5"/>
         <image name="membership_rating_explanation_btn" width="119" height="34.5"/>
         <image name="membership_rating_qualification_card" width="343" height="438"/>

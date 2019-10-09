@@ -38,6 +38,25 @@ class Type3ViewController: UIViewController {
         imageView1.circleImageView()
         imageView2.circleImageView()
         imageView3.circleImageView()
+        
+        setNavigationBar()
+        self.navigationItem.hidesBackButton = true
+    }
+    
+    //MARK: 13버전
+    @IBAction func startAction(_ sender: UIButton) {
+        
+        if #available(iOS 13.0, *) {
+            let tabVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarViewController") as! TabBarViewController
+            tabVC.modalPresentationStyle = .fullScreen
+            self.present(tabVC, animated: true, completion: nil)
+        } else {
+            
+        }
+    }
+    
+    @IBAction func prevAction(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

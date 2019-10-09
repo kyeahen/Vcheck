@@ -17,6 +17,7 @@ class RatingViewController: MXSegmentedPagerController {
         super.viewDidLoad()
         
         setBackBtn()
+        self.tabBarController?.tabBar.isHidden = true
     
         segmentedPager.backgroundColor = .white
         

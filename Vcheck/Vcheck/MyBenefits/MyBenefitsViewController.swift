@@ -21,10 +21,12 @@ class MyBenefitsViewController: UIViewController {
     
     let titleArr : [String] = ["프리미엄 컬쳐", "비건샵/식당 쿠폰", "사회적 기부"]
     let msgArr : [String] = ["월 2회 비건 컬쳐를 누려보세요", "총 8개의 쿠폰을 제공해드려요", "결제 금액의 2%가 기부됩니다"]
+    let imageArr : [UIImage] = [UIImage(named: "membership_festival_illust_one")!, UIImage(named: "membership_festival_illust_two")!, UIImage(named: "membership_festival_illust_three")!]
     
     @IBOutlet weak var benefitCollectionView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var msgLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     
 
@@ -33,6 +35,24 @@ class MyBenefitsViewController: UIViewController {
 
         setCollectionView()
         setNavigationBar()
+        self.tabBarController?.tabBar.isHidden = false
+        
+        imageView.alpha = 0
+        UIView.animate(withDuration: 1.0, animations: ({
+
+          self.imageView.alpha = 1;
+        }))
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+        
+        imageView.alpha = 0
+        UIView.animate(withDuration: 1.0, animations: ({
+
+          self.imageView.alpha = 1
+        }))
 
     }
     
@@ -44,11 +64,6 @@ class MyBenefitsViewController: UIViewController {
     func setCollectionView() {
         benefitCollectionView.delegate = self
         benefitCollectionView.dataSource = self
-    }
-    
-    @IBAction func couponAction(_ sender: UITapGestureRecognizer) {
-        let couponVC = UIStoryboard(name: "MyBenefits", bundle: nil).instantiateViewController(withIdentifier: "couponNaviVC")
-        self.present(couponVC, animated: true, completion: nil)
     }
     
 }
@@ -68,6 +83,11 @@ extension MyBenefitsViewController: UICollectionViewDelegate, UICollectionViewDa
         } else if indexPath.row == 1 {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyBenefits2CollectionViewCell", for: indexPath) as! MyBenefits2CollectionViewCell
+            cell.actionClosure = { [weak self] in
+                let couponVC = UIStoryboard(name: "MyBenefits", bundle: nil).instantiateViewController(withIdentifier: "couponNaviVC")
+                couponVC.modalPresentationStyle = .fullScreen
+                self!.present(couponVC, animated: true, completion: nil)
+            }
             
             return cell
             
@@ -125,6 +145,15 @@ extension MyBenefitsViewController : UIScrollViewDelegate {
             titleLabel.text = titleArr[currentIdx]
             msgLabel.text = msgArr[currentIdx]
             
+            self.imageView.alpha = 0
+            UIView.animate(withDuration: 1.0, animations: ({
+
+            self.imageView.alpha = 1
+            self.imageView.image = self.imageArr[self.currentIdx]
+            }))
+
+
+            
         } else if finalOffset < startOffset {
             //앞으로 가기
             let majorIdx = indexOfMajorCell(direction: .left)
@@ -133,6 +162,13 @@ extension MyBenefitsViewController : UIScrollViewDelegate {
             
             titleLabel.text = titleArr[currentIdx]
             msgLabel.text = msgArr[currentIdx]
+
+            self.imageView.alpha = 0
+            UIView.animate(withDuration: 1.0, animations: ({
+
+            self.imageView.alpha = 1
+            self.imageView.image = self.imageArr[self.currentIdx]
+            }))
             
         } else {
             print("둘다 아님")
