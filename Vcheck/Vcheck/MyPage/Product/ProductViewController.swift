@@ -12,7 +12,7 @@ class ProductViewController: UIViewController {
 
     @IBOutlet weak var productTableView: UITableView!
     
-    let imageArr : [UIImage] = [UIImage(named: "home_recentsearch_one.png")!, UIImage(named: "home_recentsearch_four.png")!, UIImage(named: "home_recentsearch_three.png")!]
+    let imageArr : [UIImage] = [UIImage(named: "home_recentsearch_four.png")!, UIImage(named: "home_recentsearch_five.png")!, UIImage(named: "home_recentsearch_three.png")!]
     let titleArr : [String] = ["아몬드브리즈 오리지널", "한 입 김말이", "수미칩 오리지널"]
     let brandArr : [String] = ["매일", "올가", "농심"]
     var statusArr : [Int] = [0, 0, 0]
