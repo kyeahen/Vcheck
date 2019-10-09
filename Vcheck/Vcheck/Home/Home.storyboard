@@ -162,6 +162,9 @@
                                                     <constraint firstAttribute="width" constant="45" id="ltX-O6-9nC"/>
                                                 </constraints>
                                                 <state key="normal" image="home_more_btn"/>
+                                                <connections>
+                                                    <action selector="showSearch:" destination="SI0-5G-Rsv" eventType="touchUpInside" id="6cZ-pO-v1Q"/>
+                                                </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tTb-YL-Sx5">
                                                 <rect key="frame" x="19.5" y="993" width="375" height="128"/>

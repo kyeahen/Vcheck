@@ -117,12 +117,22 @@ class ViewController: UIViewController {
             // Fallback on earlier versions
         }
     }
+    @IBAction func showSearch(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            let vc = UIStoryboard(name: "Search", bundle: nil).instantiateViewController(identifier: "SearchViewController") as! SearchViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else {
+        }
+    }
     @IBAction func showLast(_ sender: Any) {
         if #available(iOS 13.0, *) {
-            let vc = storyboard?.instantiateViewController(identifier: "InterestViewController") as! InterestViewController
+            let vc = UIStoryboard(name: "Product", bundle: nil).instantiateViewController(identifier: "ProductViewController") as! ProductViewController
+            
             self.navigationController?.pushViewController(vc, animated: true)
+            
         } else {
-            // Fallback on earlier versions
         }
         
     }
