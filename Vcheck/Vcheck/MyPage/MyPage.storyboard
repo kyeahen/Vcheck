@@ -263,6 +263,7 @@
                     <navigationItem key="navigationItem" title="마이 페이지" id="PvZ-ed-OfD"/>
                     <connections>
                         <outlet property="backView" destination="ZDN-lf-CVz" id="WB4-lY-yhR"/>
+                        <outlet property="nameLabel" destination="Ovc-WZ-Xv8" id="Ye6-p8-zjo"/>
                         <segue destination="DrK-71-4lC" kind="show" id="vfh-ZW-tdB"/>
                     </connections>
                 </viewController>

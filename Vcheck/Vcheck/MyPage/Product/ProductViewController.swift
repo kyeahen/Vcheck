@@ -22,6 +22,11 @@ class ProductViewController: UIViewController {
 
         setTableView()
         setBackBtn()
+        self.tabBarController?.tabBar.isHidden = true
+    }
+        
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     func setTableView() {
