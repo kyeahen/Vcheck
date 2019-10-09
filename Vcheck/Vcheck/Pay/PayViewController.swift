@@ -41,16 +41,26 @@ class PayViewController: UIViewController {
         bottomView.layer.borderColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
         bottomView.layer.zPosition = 2
         
-        bottomController = CTBottomSlideController(parent: view, bottomView: bottomView, tabController: self.tabBarController!, navController: self.navigationController, visibleHeight: 182)
+        bottomController = CTBottomSlideController(parent: view, bottomView: bottomView, tabController: self.tabBarController!, navController: self.navigationController, visibleHeight: 166)
+        
+        bottomView.clipsToBounds = true
     
-        
-        
         bottomController?.setAnchorPoint(anchor: 1.0)
         bottomController?.delegate = self
 
         // Do any additional setup after loading the view.
     }
-  
+    @IBAction func goQR(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            let navi = storyboard?.instantiateViewController(identifier: "QRNavi") as! UINavigationController
+            navi.modalPresentationStyle = .fullScreen
+            present(navi, animated: true, completion: nil)
+        } else {
+            // Fallback on earlier versions
+        }
+    }
+    
+    
 }
 
 extension PayViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -62,9 +72,9 @@ extension PayViewController: UICollectionViewDelegate, UICollectionViewDataSourc
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PayCardCollectionViewCell", for: indexPath) as! PayCardCollectionViewCell
         
         if indexPath.row == 0{
-            cell.cardimage.image = UIImage(named: "payment_card_plus.png")
+            cell.cardimage.image = UIImage(named: "payment_card_one.png")
         }else if indexPath.row == 1{
-            cell.cardimage.image = UIImage(named: "payment_card_plus.png")
+            cell.cardimage.image = UIImage(named: "payment_card_two.png")
         }else{
             cell.cardimage.image = UIImage(named: "payment_card_plus.png")
         }
@@ -81,13 +91,16 @@ extension PayViewController: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if #available(iOS 13.0, *) {
-            let navi = storyboard?.instantiateViewController(identifier: "payCardNavi") as! UINavigationController
-            navi.modalPresentationStyle = .fullScreen
-            present(navi, animated: true, completion: nil)
-        } else {
-            // Fallback on earlier versions
+        if indexPath.row != 2 {
+            if #available(iOS 13.0, *) {
+                let navi = storyboard?.instantiateViewController(identifier: "QRNavi") as! UINavigationController
+                navi.modalPresentationStyle = .fullScreen
+                present(navi, animated: true, completion: nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
+        
         
     }
     
@@ -149,11 +162,11 @@ extension PayViewController : UIScrollViewDelegate {
 
 extension PayViewController: CTBottomSlideDelegate{
     func didPanelCollapse() {
-         
+        bottomView.layoutIfNeeded()
     }
     
     func didPanelExpand() {
-        
+        bottomView.layoutIfNeeded()
     }
     
     func didPanelAnchor() {

@@ -13,6 +13,8 @@
 		151647D2234860B50012C40D /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D1234860B50012C40D /* HomeBannerCollectionViewCell.swift */; };
 		151647D42348665A0012C40D /* RecentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D32348665A0012C40D /* RecentCollectionViewCell.swift */; };
 		151647D623486A210012C40D /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D523486A210012C40D /* InterestCollectionViewCell.swift */; };
+		1545743C234DE23B00325D54 /* PayCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545743B234DE23B00325D54 /* PayCheckViewController.swift */; };
+		1545743E234DEC1300325D54 /* PayReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545743D234DEC1300325D54 /* PayReceiptViewController.swift */; };
 		154A52FA2348714C00D0F996 /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A52F92348714C00D0F996 /* InterestViewController.swift */; };
 		156F1DC123486FE1009042F5 /* LastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F1DC023486FE1009042F5 /* LastCollectionViewCell.swift */; };
 		15B2EEAE234DB6F200A6F9D7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2EEAD234DB6F200A6F9D7 /* SplashViewController.swift */; };
@@ -82,6 +84,8 @@
 		151647D1234860B50012C40D /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		151647D32348665A0012C40D /* RecentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCollectionViewCell.swift; sourceTree = "<group>"; };
 		151647D523486A210012C40D /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		1545743B234DE23B00325D54 /* PayCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCheckViewController.swift; sourceTree = "<group>"; };
+		1545743D234DEC1300325D54 /* PayReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayReceiptViewController.swift; sourceTree = "<group>"; };
 		154A52F92348714C00D0F996 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
 		156F1DC023486FE1009042F5 /* LastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCollectionViewCell.swift; sourceTree = "<group>"; };
 		15B2EEAD234DB6F200A6F9D7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 				15DCEC6F233C6423006028EC /* PayCardViewController.swift */,
 				15DCEC71233C642F006028EC /* PayCompleteViewController.swift */,
 				15DCEC73233C6461006028EC /* QRViewController.swift */,
+				1545743B234DE23B00325D54 /* PayCheckViewController.swift */,
+				1545743D234DEC1300325D54 /* PayReceiptViewController.swift */,
 			);
 			path = Pay;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 				22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */,
 				154A52FA2348714C00D0F996 /* InterestViewController.swift in Sources */,
 				151647D623486A210012C40D /* InterestCollectionViewCell.swift in Sources */,
+				1545743E234DEC1300325D54 /* PayReceiptViewController.swift in Sources */,
 				22C6B162232CCD6C00E50164 /* CouponViewController.swift in Sources */,
 				223FB35F232100B400CCF47F /* ViewController.swift in Sources */,
 				22068A382347975E0091DFA9 /* ImageSearchXViewController.swift in Sources */,
@@ -524,6 +531,7 @@
 				22C6B18A232D572300E50164 /* ImageSearchDetailViewController.swift in Sources */,
 				22C6B17E232D471500E50164 /* SearchViewController.swift in Sources */,
 				15DCEC74233C6461006028EC /* QRViewController.swift in Sources */,
+				1545743C234DE23B00325D54 /* PayCheckViewController.swift in Sources */,
 				15DCEC72233C642F006028EC /* PayCompleteViewController.swift in Sources */,
 				22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */,
 				151647CA23459FDA0012C40D /* FoodCollectionViewCell.swift in Sources */,
