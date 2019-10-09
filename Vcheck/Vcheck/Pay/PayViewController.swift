@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CTSlidingUpPanel
 
 class PayViewController: UIViewController {
 
@@ -21,6 +22,10 @@ class PayViewController: UIViewController {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var bottomView: UIView!
+    var bottomController : CTBottomSlideController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +34,19 @@ class PayViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout.invalidateLayout()
+        
+        bottomView.makeRounded(cornerRadius: 30)
+        
+        bottomView.layer.borderWidth = 1
+        bottomView.layer.borderColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
+        bottomView.layer.zPosition = 2
+        
+        bottomController = CTBottomSlideController(parent: view, bottomView: bottomView, tabController: self.tabBarController!, navController: self.navigationController, visibleHeight: 182)
+    
+        
+        
+        bottomController?.setAnchorPoint(anchor: 1.0)
+        bottomController?.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -65,6 +83,7 @@ extension PayViewController: UICollectionViewDelegate, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if #available(iOS 13.0, *) {
             let navi = storyboard?.instantiateViewController(identifier: "payCardNavi") as! UINavigationController
+            navi.modalPresentationStyle = .fullScreen
             present(navi, animated: true, completion: nil)
         } else {
             // Fallback on earlier versions
@@ -125,3 +144,25 @@ extension PayViewController : UIScrollViewDelegate {
     }
 }
 
+
+// Bottom Slide
+
+extension PayViewController: CTBottomSlideDelegate{
+    func didPanelCollapse() {
+         
+    }
+    
+    func didPanelExpand() {
+        
+    }
+    
+    func didPanelAnchor() {
+         
+    }
+    
+    func didPanelMove(panelOffset: CGFloat) {
+         
+    }
+    
+    
+}
