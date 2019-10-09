@@ -13,6 +13,11 @@
 		151647D2234860B50012C40D /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D1234860B50012C40D /* HomeBannerCollectionViewCell.swift */; };
 		151647D42348665A0012C40D /* RecentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D32348665A0012C40D /* RecentCollectionViewCell.swift */; };
 		151647D623486A210012C40D /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151647D523486A210012C40D /* InterestCollectionViewCell.swift */; };
+		151B2F88234DF86400D7DF87 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B2F87234DF86400D7DF87 /* MyPageViewController.swift */; };
+		151B2F8A234E011700D7DF87 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B2F89234E011700D7DF87 /* ReviewViewController.swift */; };
+		151B2F8C234E05A400D7DF87 /* Review1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B2F8B234E05A400D7DF87 /* Review1ViewController.swift */; };
+		151B2F8E234E05F300D7DF87 /* CreateReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B2F8D234E05F300D7DF87 /* CreateReviewViewController.swift */; };
+		151B2F90234E07E000D7DF87 /* CompleteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B2F8F234E07E000D7DF87 /* CompleteReviewViewController.swift */; };
 		1545743C234DE23B00325D54 /* PayCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545743B234DE23B00325D54 /* PayCheckViewController.swift */; };
 		1545743E234DEC1300325D54 /* PayReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545743D234DEC1300325D54 /* PayReceiptViewController.swift */; };
 		154A52FA2348714C00D0F996 /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A52F92348714C00D0F996 /* InterestViewController.swift */; };
@@ -84,6 +89,11 @@
 		151647D1234860B50012C40D /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		151647D32348665A0012C40D /* RecentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCollectionViewCell.swift; sourceTree = "<group>"; };
 		151647D523486A210012C40D /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		151B2F87234DF86400D7DF87 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		151B2F89234E011700D7DF87 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		151B2F8B234E05A400D7DF87 /* Review1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review1ViewController.swift; sourceTree = "<group>"; };
+		151B2F8D234E05F300D7DF87 /* CreateReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewViewController.swift; sourceTree = "<group>"; };
+		151B2F8F234E07E000D7DF87 /* CompleteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteReviewViewController.swift; sourceTree = "<group>"; };
 		1545743B234DE23B00325D54 /* PayCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCheckViewController.swift; sourceTree = "<group>"; };
 		1545743D234DEC1300325D54 /* PayReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayReceiptViewController.swift; sourceTree = "<group>"; };
 		154A52F92348714C00D0F996 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +270,11 @@
 			isa = PBXGroup;
 			children = (
 				223FB376232103C000CCF47F /* MyPage.storyboard */,
+				151B2F87234DF86400D7DF87 /* MyPageViewController.swift */,
+				151B2F89234E011700D7DF87 /* ReviewViewController.swift */,
+				151B2F8B234E05A400D7DF87 /* Review1ViewController.swift */,
+				151B2F8D234E05F300D7DF87 /* CreateReviewViewController.swift */,
+				151B2F8F234E07E000D7DF87 /* CompleteReviewViewController.swift */,
 				223FB37E232106E600CCF47F /* Review */,
 				223FB3812321073500CCF47F /* Product */,
 				223FB37F232106F400CCF47F /* Search */,
@@ -510,21 +525,25 @@
 				15DCEC6C233C5380006028EC /* PayCardCollectionViewCell.swift in Sources */,
 				15DCEC6E233C5407006028EC /* PayViewController.swift in Sources */,
 				22C6B17C232D3DA500E50164 /* ProductPopUpViewController.swift in Sources */,
+				151B2F8E234E05F300D7DF87 /* CreateReviewViewController.swift in Sources */,
 				2251DBBD234753FA0090183F /* ImageSearchService.swift in Sources */,
 				22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */,
 				2251DBC1234755790090183F /* testViewController.swift in Sources */,
 				22C6B164232CCD7F00E50164 /* CouponTableViewCell.swift in Sources */,
+				151B2F8A234E011700D7DF87 /* ReviewViewController.swift in Sources */,
 				22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */,
 				154A52FA2348714C00D0F996 /* InterestViewController.swift in Sources */,
 				151647D623486A210012C40D /* InterestCollectionViewCell.swift in Sources */,
 				1545743E234DEC1300325D54 /* PayReceiptViewController.swift in Sources */,
 				22C6B162232CCD6C00E50164 /* CouponViewController.swift in Sources */,
+				151B2F8C234E05A400D7DF87 /* Review1ViewController.swift in Sources */,
 				223FB35F232100B400CCF47F /* ViewController.swift in Sources */,
 				22068A382347975E0091DFA9 /* ImageSearchXViewController.swift in Sources */,
 				22E509E8234617C70026643A /* TabBarViewController.swift in Sources */,
 				22C6B174232D1EAC00E50164 /* MyBenefits3CollectionViewCell.swift in Sources */,
 				22C6B170232D1C1700E50164 /* MyBenefits1CollectionViewCell.swift in Sources */,
 				22D773B3232C997D00AD0D25 /* Type1ViewController.swift in Sources */,
+				151B2F88234DF86400D7DF87 /* MyPageViewController.swift in Sources */,
 				151647D0234850410012C40D /* FoodTableViewCell.swift in Sources */,
 				22C6B172232D1C2C00E50164 /* MyBenefits2CollectionViewCell.swift in Sources */,
 				151647D2234860B50012C40D /* HomeBannerCollectionViewCell.swift in Sources */,
@@ -537,6 +556,7 @@
 				151647CA23459FDA0012C40D /* FoodCollectionViewCell.swift in Sources */,
 				15B2EEAE234DB6F200A6F9D7 /* SplashViewController.swift in Sources */,
 				151647D42348665A0012C40D /* RecentCollectionViewCell.swift in Sources */,
+				151B2F90234E07E000D7DF87 /* CompleteReviewViewController.swift in Sources */,
 				22C6B184232D560400E50164 /* ImageSearchViewController.swift in Sources */,
 				22C6B168232CF5F300E50164 /* Font.swift in Sources */,
 				22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */,
