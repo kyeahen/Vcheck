@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SXC-jo-46J">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="80f-Tg-gEr">
+
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar View Controller-->
+        <!--Splash View Controller-->
+        <scene sceneID="pfz-A4-Jqe">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="80f-Tg-gEr" customClass="SplashViewController" customModule="Vcheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zKB-rw-edL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LgH-4Q-EJm">
+                                <rect key="frame" x="145" y="388.5" width="124" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="Enu-k0-VQu"/>
+                                    <constraint firstAttribute="height" constant="129" id="jEK-MR-JAp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LgH-4Q-EJm" firstAttribute="centerY" secondItem="nFK-vF-N1L" secondAttribute="centerY" id="KW0-6w-8kB"/>
+                            <constraint firstItem="LgH-4Q-EJm" firstAttribute="centerX" secondItem="nFK-vF-N1L" secondAttribute="centerX" id="XGa-jj-Kiy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nFK-vF-N1L"/>
+                    </view>
+                    <connections>
+                        <outlet property="splashImageView" destination="LgH-4Q-EJm" id="NGt-YS-hs7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceX-XX-VIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239.1304347826087" y="112.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="Hmo-Yh-gfh">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="SXC-jo-46J" customClass="TabBarViewController" customModule="Vcheck" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTab" automaticallyAdjustsScrollViewInsets="NO" id="SXC-jo-46J" sceneMemberID="viewController">
+
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iCE-8q-slm">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -38,7 +74,7 @@
                         <inset key="largeContentSizeImageInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN6-Ru-WGR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="back_gray_icon" backIndicatorTransitionMaskImage="back_gray_icon" id="iN6-Ru-WGR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,6 +190,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_gray_icon" width="22" height="22"/>
         <image name="tab_home_gray_icon" width="44" height="44"/>
         <image name="tab_membership_gray_icon" width="44" height="44"/>
         <image name="tab_mypage_gray_icon" width="44" height="44"/>
