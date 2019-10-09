@@ -15,11 +15,27 @@ class PayCompleteViewController: UIViewController {
         
         setNavigationBar()
 
+
         // Do any additional setup after loading the view.
+    }
+    @IBAction func ok(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            let tabVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarViewController") as! TabBarViewController
+            tabVC.modalPresentationStyle = .fullScreen
+            self.present(tabVC, animated: true, completion: nil)
+        } else {
+        }
     }
     
     @IBAction func close(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        
+        //dismiss(animated: true, completion: nil)
+        if #available(iOS 13.0, *) {
+            let tabVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarViewController") as! TabBarViewController
+            tabVC.modalPresentationStyle = .fullScreen
+            self.present(tabVC, animated: true, completion: nil)
+        } else {
+        }
     }
     
     /*

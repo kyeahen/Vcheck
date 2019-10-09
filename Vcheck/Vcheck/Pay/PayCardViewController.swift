@@ -15,11 +15,13 @@ class PayCardViewController: UIViewController {
         
         setNavigationBar()
 
+
         // Do any additional setup after loading the view.
     }
     @IBAction func ok(_ sender: Any) {
         if #available(iOS 13.0, *) {
             let navi = storyboard?.instantiateViewController(identifier: "payCompleteNavi") as! UINavigationController
+            navi.modalPresentationStyle = .fullScreen
             present(navi, animated: true, completion: nil)
         } else {
             // Fallback on earlier versions

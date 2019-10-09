@@ -18,6 +18,12 @@ class Type1ViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if #available(iOS 13.0, *) {
+            let tabVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarViewController") as! TabBarViewController
+            tabVC.modalPresentationStyle = .fullScreen
+            self.present(tabVC, animated: true, completion: nil)
+        } else {
+        }
 
         setCustomView()
         

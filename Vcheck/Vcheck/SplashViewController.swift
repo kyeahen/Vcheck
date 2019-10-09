@@ -19,7 +19,7 @@ class SplashViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             if #available(iOS 13.0, *) {
-                let vc = self.storyboard?.instantiateViewController(identifier: "mainTab") as! UITabBarController
+                let vc = self.storyboard?.instantiateViewController(identifier: "TabBarViewController") as! UITabBarController
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: false, completion: nil)
             } else {

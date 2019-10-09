@@ -16,10 +16,84 @@ class FoodViewController: UIViewController {
     
     var foods = ["과자/간식","음료","주류","간편식","건강식품"]
     
+    var foodImages: [UIImage] = []
+    
+    var data: [[UIImage]] = []
+    
+    var snacks: [UIImage] = [
+        UIImage(named: "ranking_snack_one")!,
+        UIImage(named: "ranking_snack_two")!,
+        UIImage(named: "ranking_snack_three")!,
+        UIImage(named: "ranking_snack_four")!,
+        UIImage(named: "ranking_snack_five")!,
+        UIImage(named: "ranking_snack_six")!,
+        UIImage(named: "ranking_snack_seven")!,
+        UIImage(named: "ranking_snack_eight")!,
+        UIImage(named: "ranking_snack_nine")!,
+        UIImage(named: "ranking_snack_ten")!
+    ]
+    
+    var liquors: [UIImage] = [
+        UIImage(named: "ranking_liquor_one")!,
+        UIImage(named: "ranking_liquor_two")!,
+        UIImage(named: "ranking_liquor_three")!,
+        UIImage(named: "ranking_liquor_four")!,
+        UIImage(named: "ranking_liquor_five")!,
+        UIImage(named: "ranking_liquor_six")!,
+        UIImage(named: "ranking_liquor_seven")!,
+        UIImage(named: "ranking_liquor_eight")!,
+        UIImage(named: "ranking_liquor_nine")!,
+        UIImage(named: "ranking_liquor_ten")!
+    ]
+    
+    var drinks: [UIImage] = [
+        UIImage(named: "ranking_drink_one")!,
+        UIImage(named: "ranking_drink_two")!,
+        UIImage(named: "ranking_drink_three")!,
+        UIImage(named: "ranking_drink_four")!,
+        UIImage(named: "ranking_drink_five")!,
+        UIImage(named: "ranking_drink_six")!,
+        UIImage(named: "ranking_drink_seven")!,
+        UIImage(named: "ranking_drink_eight")!,
+        UIImage(named: "ranking_drink_nine")!,
+        UIImage(named: "ranking_drink_ten")!
+    ]
+    
+    var hmrs: [UIImage] = [
+        UIImage(named: "ranking_hmr_one")!,
+        UIImage(named: "ranking_hmr_two")!,
+        UIImage(named: "ranking_hmr_three")!,
+        UIImage(named: "ranking_hmr_four")!,
+        UIImage(named: "ranking_hmr_five")!,
+        UIImage(named: "ranking_hmr_six")!,
+        UIImage(named: "ranking_hmr_seven")!,
+        UIImage(named: "ranking_hmr_eight")!,
+        UIImage(named: "ranking_hmr_nine")!,
+        UIImage(named: "ranking_hmr_ten")!
+    ]
+    
+    var healthfoods: [UIImage] = [
+        UIImage(named: "ranking_healthfood_one")!,
+        UIImage(named: "ranking_healthfood_two")!,
+        UIImage(named: "ranking_healthfood_three")!,
+        UIImage(named: "ranking_healthfood_four")!,
+        UIImage(named: "ranking_healthfood_five")!,
+        UIImage(named: "ranking_healthfood_six")!,
+        UIImage(named: "ranking_healthfood_seven")!,
+        UIImage(named: "ranking_healthfood_eight")!,
+        UIImage(named: "ranking_healthfood_nine")!,
+        UIImage(named: "ranking_healthfood_ten")!
+    ]
+   
+    
+    
     var selectedRow = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initData()
+        foodImages = data[0]
 
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -27,12 +101,21 @@ class FoodViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+        
         setNavigationBar()
+    }
+    
+    func initData(){
+        data.append(snacks)
+        data.append(drinks)
+        data.append(liquors)
+        data.append(hmrs)
+        data.append(healthfoods)
     }
     
     @IBAction func selectFilter(_ sender: UIButton) {
         if sender.tag == 100{
-            print("신상품")
             let button1 = self.view.viewWithTag(200) as! UIButton
             let button2 = self.view.viewWithTag(300) as! UIButton
             
@@ -42,7 +125,6 @@ class FoodViewController: UIViewController {
             setButtonGray(button: button2)
             
         }else if sender.tag == 200{
-            print("구매순")
             let button1 = self.view.viewWithTag(100) as! UIButton
             let button2 = self.view.viewWithTag(300) as! UIButton
             
@@ -51,7 +133,6 @@ class FoodViewController: UIViewController {
             setButtonGray(button: button2)
             
         }else if sender.tag == 300{
-            print("검색순")
             let button1 = self.view.viewWithTag(100) as! UIButton
             let button2 = self.view.viewWithTag(200) as! UIButton
             
@@ -61,6 +142,9 @@ class FoodViewController: UIViewController {
             setButtonGray(button: button2)
             
         }
+        
+        foodImages.shuffle()
+        tableView.reloadData()
     }
     
     @IBAction func close(_ sender: Any) {
@@ -104,7 +188,7 @@ extension FoodViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 90, height: 40)
+        return CGSize(width: 80, height: 40)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -118,6 +202,9 @@ extension FoodViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedRow = indexPath.row
+        foodImages = data[selectedRow]
+        
+        self.tableView.reloadData()
         self.collectionView.reloadData()
     }
     
@@ -127,11 +214,14 @@ extension FoodViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension FoodViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 11
+        return foodImages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTableViewCell", for: indexPath) as! FoodTableViewCell
+        
+        cell.foodImage.image = foodImages[indexPath.row]
+        cell.foodNum.text = "\(indexPath.row + 1)"
         
         return cell
     }

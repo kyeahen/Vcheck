@@ -845,8 +845,8 @@
         <image name="category_step_one_card" width="375" height="173"/>
         <image name="category_step_one_illust" width="265" height="280"/>
         <image name="category_step_three_card" width="375" height="511"/>
-        <image name="category_step_two_card_mytype_inactivated" width="375" height="149"/>
-        <image name="category_step_two_card_type_inactivated" width="375" height="149"/>
+        <image name="category_step_two_card_mytype_inactivated" width="335" height="109"/>
+        <image name="category_step_two_card_type_inactivated" width="335" height="109"/>
         <image name="category_step_two_illust" width="201" height="201"/>
         <image name="category_vegetable_inactivated_btn" width="88" height="95.5"/>
     </resources>

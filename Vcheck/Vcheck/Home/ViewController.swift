@@ -70,6 +70,7 @@ class ViewController: UIViewController {
         
         //interestCollectionView.layer.zPosition = 0
         interestCard.layer.zPosition = 3
+        pageControl.layer.zPosition = 4
                 
         pageControl.numberOfPages = interests.count
         pageControl.currentPage = 0
@@ -105,6 +106,17 @@ class ViewController: UIViewController {
         lastCollectionView.dataSource = self
     }
     
+    @IBAction func showMore(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            let vc = storyboard?.instantiateViewController(identifier: "foodNavi") as! UINavigationController
+            
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+
+        } else {
+            // Fallback on earlier versions
+        }
+    }
     @IBAction func showLast(_ sender: Any) {
         if #available(iOS 13.0, *) {
             let vc = storyboard?.instantiateViewController(identifier: "InterestViewController") as! InterestViewController
@@ -199,7 +211,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         }else if collectionView == interestCollectionView{
             return CGSize(width: 414, height: 316)
         }else{
-            return CGSize(width: 120, height: 125)
+            return CGSize(width: 110, height: 125)
         }
         
     }
