@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
-class ImageSearchViewController: UIViewController {
+class ImageSearchViewController: UIViewController, CAAnimationDelegate {
     
+    @IBOutlet weak var lodingView: UIView!
+    @IBOutlet weak var prevImageView: UIImageView!
+    @IBOutlet weak var opImageView: UIImageView!
+    @IBOutlet weak var gifImageView: UIImageView!
     
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -23,16 +28,51 @@ class ImageSearchViewController: UIViewController {
     var flag: Int = 0
     
     var products: Product?
+    var productImage: UIImage?
+    
+    let gif = UIImage.gif(name: "o")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setData()
+        setGif()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.lodingView.isHidden = true
+            self.opImageView.isHidden = true
+        }
+    }
+    
+    func setGif() {
+        gifImageView.image = gif
+        gifImageView.animationDuration = gif!.duration
+        gifImageView.animationRepeatCount = 1
+        gifImageView.startAnimating()
+        
+        var values = [CGImage]()
+        for image in gif!.images! {
+            values.append(image.cgImage!)
+        }
+
+        let animation = CAKeyframeAnimation(keyPath: "contents")
+        animation.calculationMode = CAAnimationCalculationMode.discrete
+        animation.duration = gif!.duration
+        animation.values = values
+        // Set the repeat count
+        animation.repeatCount = 1
+        // Other stuff
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = CAMediaTimingFillMode.forwards
+        // Set the delegate
+        animation.delegate = self
+        gifImageView.layer.add(animation, forKey: "animation")
     }
     
     func setData() {
         nameLabel.text = products?.food_name
         brandLabel.text = products?.brand_name
+        prevImageView.image = productImage
         
         if products?.food_name == "블루문 벨지움 화이트" {
             productImageView.image = UIImage(named: "imgsearch_product_three_img")
