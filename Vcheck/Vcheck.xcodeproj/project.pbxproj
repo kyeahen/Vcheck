@@ -52,7 +52,6 @@
 		2251DBBA234753C90090183F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBB9234753C90090183F /* Product.swift */; };
 		2251DBBD234753FA0090183F /* ImageSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBBC234753FA0090183F /* ImageSearchService.swift */; };
 		2251DBBF234754500090183F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBBE234754500090183F /* APIService.swift */; };
-		2251DBC1234755790090183F /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251DBC0234755790090183F /* testViewController.swift */; };
 		22C6B159232CA57D00E50164 /* Type3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B158232CA57D00E50164 /* Type3ViewController.swift */; };
 		22C6B15D232CABBD00E50164 /* Type3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B15C232CABBD00E50164 /* Type3CollectionViewCell.swift */; };
 		22C6B15F232CB84100E50164 /* Type4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6B15E232CB84100E50164 /* Type4ViewController.swift */; };
@@ -130,7 +129,6 @@
 		2251DBB9234753C90090183F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2251DBBC234753FA0090183F /* ImageSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchService.swift; sourceTree = "<group>"; };
 		2251DBBE234754500090183F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		2251DBC0234755790090183F /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		22C6B158232CA57D00E50164 /* Type3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type3ViewController.swift; sourceTree = "<group>"; };
 		22C6B15C232CABBD00E50164 /* Type3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type3CollectionViewCell.swift; sourceTree = "<group>"; };
 		22C6B15E232CB84100E50164 /* Type4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type4ViewController.swift; sourceTree = "<group>"; };
@@ -343,7 +341,6 @@
 				22C6B183232D560400E50164 /* ImageSearchViewController.swift */,
 				22C6B187232D570200E50164 /* ImageSearchReviewViewController.swift */,
 				22C6B189232D572300E50164 /* ImageSearchDetailViewController.swift */,
-				2251DBC0234755790090183F /* testViewController.swift */,
 				22068A372347975E0091DFA9 /* ImageSearchXViewController.swift */,
 			);
 			path = ImageSearch;
@@ -528,7 +525,6 @@
 				151B2F8E234E05F300D7DF87 /* CreateReviewViewController.swift in Sources */,
 				2251DBBD234753FA0090183F /* ImageSearchService.swift in Sources */,
 				22D773B1232C975300AD0D25 /* ExtensionControl.swift in Sources */,
-				2251DBC1234755790090183F /* testViewController.swift in Sources */,
 				22C6B164232CCD7F00E50164 /* CouponTableViewCell.swift in Sources */,
 				151B2F8A234E011700D7DF87 /* ReviewViewController.swift in Sources */,
 				22C6B182232D495800E50164 /* SearchPopUpViewController.swift in Sources */,

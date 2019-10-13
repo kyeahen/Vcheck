@@ -732,22 +732,34 @@
                                 <color key="textColor" red="0.2120238841" green="0.22729483249999999" blue="0.23529574280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpA-J6-pNJ">
-                                <rect key="frame" x="10" y="231" width="394" height="149"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="149" id="esn-0O-iqx"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpA-J6-pNJ">
+                                <rect key="frame" x="39.5" y="231" width="335" height="109"/>
                                 <state key="normal" image="category_step_two_card_type_inactivated"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadows" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="choiceAction:" destination="sMu-Vg-gPW" eventType="touchUpInside" id="Wne-Da-lOJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-DA-7AR">
-                                <rect key="frame" x="10" y="370" width="394" height="149"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="149" id="0ZR-9a-3Bk"/>
-                                </constraints>
+                                <rect key="frame" x="39.5" y="358" width="335" height="109"/>
                                 <state key="normal" image="category_step_two_card_mytype_inactivated"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadows" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="choiceAction:" destination="sMu-Vg-gPW" eventType="touchUpInside" id="knd-i2-xoI"/>
                                 </connections>
@@ -762,15 +774,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.9801601768" green="0.97282272579999995" blue="0.95686095950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="aaK-DA-7AR" firstAttribute="centerX" secondItem="N8b-ZC-jUT" secondAttribute="centerX" id="2ha-uy-4hW"/>
                             <constraint firstItem="zhG-ve-iVE" firstAttribute="top" secondItem="lqB-W5-kC3" secondAttribute="top" constant="77" id="5Bx-hA-28u"/>
                             <constraint firstItem="Chp-k9-7Vu" firstAttribute="centerY" secondItem="zhG-ve-iVE" secondAttribute="centerY" id="5yJ-16-Rgk"/>
-                            <constraint firstItem="aaK-DA-7AR" firstAttribute="top" secondItem="TpA-J6-pNJ" secondAttribute="bottom" constant="-10" id="6e5-EF-bo7"/>
-                            <constraint firstItem="N8b-ZC-jUT" firstAttribute="trailing" secondItem="aaK-DA-7AR" secondAttribute="trailing" constant="10" id="9Kv-wq-pef"/>
-                            <constraint firstItem="N8b-ZC-jUT" firstAttribute="trailing" secondItem="TpA-J6-pNJ" secondAttribute="trailing" constant="10" id="ANl-EM-bo3"/>
+                            <constraint firstItem="aaK-DA-7AR" firstAttribute="top" secondItem="TpA-J6-pNJ" secondAttribute="bottom" constant="18" id="6e5-EF-bo7"/>
                             <constraint firstItem="Ufx-60-KDc" firstAttribute="top" secondItem="zhG-ve-iVE" secondAttribute="top" id="DhU-gc-KVS"/>
+                            <constraint firstItem="TpA-J6-pNJ" firstAttribute="centerX" secondItem="N8b-ZC-jUT" secondAttribute="centerX" id="FUf-KR-bb2"/>
                             <constraint firstAttribute="bottom" secondItem="wSy-Ud-xYu" secondAttribute="bottom" constant="44" id="I3o-V4-n6h"/>
-                            <constraint firstItem="aaK-DA-7AR" firstAttribute="leading" secondItem="N8b-ZC-jUT" secondAttribute="leading" constant="10" id="JVh-lt-TmO"/>
-                            <constraint firstItem="TpA-J6-pNJ" firstAttribute="leading" secondItem="N8b-ZC-jUT" secondAttribute="leading" constant="10" id="MH2-TL-8j4"/>
                             <constraint firstItem="Ipy-oK-P3y" firstAttribute="top" secondItem="Yb3-hd-SKz" secondAttribute="bottom" constant="20" id="MVA-cZ-aPE"/>
                             <constraint firstItem="N8b-ZC-jUT" firstAttribute="trailing" secondItem="Ufx-60-KDc" secondAttribute="trailing" constant="34" id="Moa-fa-Yg0"/>
                             <constraint firstItem="eH8-ft-RG8" firstAttribute="top" secondItem="zhG-ve-iVE" secondAttribute="bottom" constant="5" id="OmI-Fi-deC"/>
