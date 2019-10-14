@@ -208,34 +208,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR코드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-Em-6mU">
-                                <rect key="frame" x="90" y="374" width="77" height="30"/>
+                                <rect key="frame" x="90" y="402" width="77" height="30"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <color key="textColor" red="0.21176470588235294" green="0.22745098039215686" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="를 인식해서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXe-xV-AjZ">
-                                <rect key="frame" x="166" y="374" width="115" height="30"/>
+                                <rect key="frame" x="166" y="402" width="115" height="30"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <color key="textColor" red="0.21176470589999999" green="0.2274509804" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제해보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r32-4b-MV7">
-                                <rect key="frame" x="142" y="412" width="130" height="30"/>
+                                <rect key="frame" x="142" y="440" width="130" height="30"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <color key="textColor" red="0.21176470589999999" green="0.2274509804" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제휴점 QR코드를 인식해서 식품 필터링을 경험해보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOY-t6-dHT">
-                                <rect key="frame" x="66.5" y="450" width="281" height="16"/>
+                                <rect key="frame" x="66.5" y="478" width="281" height="16"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                 <color key="textColor" red="0.52941176469999995" green="0.55294117649999996" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="payment_card_one" translatesAutoresizingMaskIntoConstraints="NO" id="Zmx-E5-YRq">
-                                <rect key="frame" x="45.5" y="489" width="323" height="224"/>
+                                <rect key="frame" x="60.5" y="534" width="293" height="194"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="224" id="EZq-3N-Bx9"/>
-                                    <constraint firstAttribute="width" constant="323" id="IhP-8a-U0f"/>
+                                    <constraint firstAttribute="height" constant="194" id="EZq-3N-Bx9"/>
+                                    <constraint firstAttribute="width" constant="293" id="IhP-8a-U0f"/>
                                 </constraints>
                             </imageView>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZv-T9-57e">
@@ -266,9 +266,9 @@
                         <constraints>
                             <constraint firstItem="mOY-t6-dHT" firstAttribute="centerX" secondItem="r32-4b-MV7" secondAttribute="centerX" id="01J-Fo-mFf"/>
                             <constraint firstItem="PDn-ih-UYK" firstAttribute="centerX" secondItem="0Hr-N7-K0j" secondAttribute="centerX" id="1YD-yg-W1d"/>
-                            <constraint firstItem="Zmx-E5-YRq" firstAttribute="top" secondItem="mOY-t6-dHT" secondAttribute="bottom" constant="23" id="54K-Qf-ppp"/>
+                            <constraint firstItem="Zmx-E5-YRq" firstAttribute="top" secondItem="mOY-t6-dHT" secondAttribute="bottom" constant="40" id="54K-Qf-ppp"/>
                             <constraint firstItem="jfP-Em-6mU" firstAttribute="leading" secondItem="0Hr-N7-K0j" secondAttribute="leading" constant="90" id="6Xd-8x-4fN"/>
-                            <constraint firstItem="jfP-Em-6mU" firstAttribute="top" secondItem="LZv-T9-57e" secondAttribute="bottom" constant="15" id="8gc-ZS-sW8"/>
+                            <constraint firstItem="jfP-Em-6mU" firstAttribute="top" secondItem="LZv-T9-57e" secondAttribute="bottom" constant="43" id="8gc-ZS-sW8"/>
                             <constraint firstItem="mOY-t6-dHT" firstAttribute="top" secondItem="r32-4b-MV7" secondAttribute="bottom" constant="8" id="9xX-6J-wJS"/>
                             <constraint firstItem="r32-4b-MV7" firstAttribute="centerX" secondItem="0Hr-N7-K0j" secondAttribute="centerX" id="W0P-Wv-Chz"/>
                             <constraint firstItem="qXe-xV-AjZ" firstAttribute="leading" secondItem="jfP-Em-6mU" secondAttribute="trailing" constant="-1" id="ce2-by-99X"/>

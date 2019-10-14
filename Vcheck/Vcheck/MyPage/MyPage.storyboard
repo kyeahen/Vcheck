@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더블체크" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZS-aG-hjs">
-                                <rect key="frame" x="122" y="172" width="94" height="33"/>
+                                <rect key="frame" x="100" y="172" width="94" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="Fiw-e1-CGc"/>
                                     <constraint firstAttribute="width" constant="94" id="ghi-kh-rgh"/>
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="민준님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovc-WZ-Xv8">
-                                <rect key="frame" x="224" y="172" width="71" height="33"/>
+                                <rect key="frame" x="202" y="172" width="71" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="M7Z-F0-E4R"/>
                                     <constraint firstAttribute="width" constant="71" id="Xpo-a6-WJF"/>
@@ -252,7 +252,7 @@
                             <constraint firstItem="Ovc-WZ-Xv8" firstAttribute="centerY" secondItem="5ZS-aG-hjs" secondAttribute="centerY" id="UKl-Dx-CiE"/>
                             <constraint firstItem="c6d-ij-m06" firstAttribute="centerX" secondItem="pO0-wE-PfG" secondAttribute="centerX" id="ZJP-mZ-YPJ"/>
                             <constraint firstItem="ZDN-lf-CVz" firstAttribute="centerX" secondItem="pO0-wE-PfG" secondAttribute="centerX" id="ZT5-Aq-WlC"/>
-                            <constraint firstItem="5ZS-aG-hjs" firstAttribute="leading" secondItem="pO0-wE-PfG" secondAttribute="leading" constant="122" id="ZiH-D1-yho"/>
+                            <constraint firstItem="5ZS-aG-hjs" firstAttribute="leading" secondItem="pO0-wE-PfG" secondAttribute="leading" constant="100" id="ZiH-D1-yho"/>
                             <constraint firstItem="jEA-15-fyr" firstAttribute="top" secondItem="pO0-wE-PfG" secondAttribute="top" constant="30" id="qNE-m2-zqT"/>
                             <constraint firstItem="c6d-ij-m06" firstAttribute="top" secondItem="5ZS-aG-hjs" secondAttribute="bottom" constant="25" id="qXx-WE-l69"/>
                             <constraint firstItem="Ovc-WZ-Xv8" firstAttribute="leading" secondItem="5ZS-aG-hjs" secondAttribute="trailing" constant="8" id="wJ8-N8-kz2"/>
