@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SwiftGifOrigin
 
 class QRViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, AVCaptureMetadataOutputObjectsDelegate {
 
@@ -16,6 +17,8 @@ class QRViewController: UIViewController, UINavigationControllerDelegate, UIImag
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
+    @IBOutlet weak var gifImage: UIImageView!
+    @IBOutlet weak var blackView: UIView!
     var picker: UIImagePickerController?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,12 +85,21 @@ class QRViewController: UIViewController, UINavigationControllerDelegate, UIImag
     
     func found(code: String) {
         print(code)
-        if #available(iOS 13.0, *) {
-            let vc = self.storyboard?.instantiateViewController(identifier: "PayCheckViewController") as! PayCheckViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-        } else {
-            // Fallback on earlier versions
+        gifImage.isHidden = false
+        blackView.isHidden = false
+        gifImage.loadGif(name: "filterloading")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.1) {
+            if #available(iOS 13.0, *) {
+                let vc = self.storyboard?.instantiateViewController(identifier: "PayCheckViewController") as! PayCheckViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
+            
         }
+        
+        
     }
     
     func failed() {
@@ -101,6 +113,10 @@ class QRViewController: UIViewController, UINavigationControllerDelegate, UIImag
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        gifImage.isHidden = true
+        blackView.isHidden = true
+        gifImage.layer.zPosition = 100
         
         if (captureSession?.isRunning == false) {
             captureSession.startRunning()

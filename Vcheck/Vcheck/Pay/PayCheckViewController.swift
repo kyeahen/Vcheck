@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 class PayCheckViewController: UIViewController {
     
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var gifImage: UIImageView!
     
     var count = 4{
         didSet{
@@ -26,6 +28,12 @@ class PayCheckViewController: UIViewController {
         navigationItem.backBarButtonItem?.title = ""
         setBackBtn()
 
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.gifImage.isHidden = true
+        
         
     }
     @IBAction func pay(_ sender: Any) {
