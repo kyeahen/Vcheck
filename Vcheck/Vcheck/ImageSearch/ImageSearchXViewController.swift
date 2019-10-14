@@ -39,6 +39,7 @@ class ImageSearchXViewController: UIViewController, CAAnimationDelegate {
 
         setData()
         setGif()
+        setBackBtn()
             
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             self.lodingView.isHidden = true
