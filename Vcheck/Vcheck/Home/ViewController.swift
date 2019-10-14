@@ -393,6 +393,8 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
 
         } else if let selectedImage = info[.originalImage] as? UIImage {
             
+            print("hhhhH")
+            
             self.imageSearch(selectedImage: selectedImage)
             self.imagePickerFlag = true
             
