@@ -238,7 +238,7 @@
                                     <constraint firstAttribute="width" constant="323" id="IhP-8a-U0f"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZv-T9-57e">
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZv-T9-57e">
                                 <rect key="frame" x="19.5" y="109" width="375" height="250"/>
                                 <color key="backgroundColor" red="0.0" green="0.70980392160000005" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
