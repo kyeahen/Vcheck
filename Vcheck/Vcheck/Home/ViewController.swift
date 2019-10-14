@@ -21,6 +21,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var interestCard: UIImageView!
     
+    @IBOutlet weak var gifImageView: UIImageView!
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var lodingView: UIView!
+    
+    
     let banners: [UIImage] = [
         UIImage(named: "home_top_banner_one_img")!,
         UIImage(named: "home_top_banner_two_img")!,
@@ -95,12 +100,14 @@ class ViewController: UIViewController {
         
         nameLabel.text = name
         searchNameLabel.text = "최근 \(name)님 검색 히스토리에요"
-        productNameLabel.text = "최근 \(name)님 검색 히스토리에요"
+        productNameLabel.text = "최근 \(name)님 관심 상품이에요"
         self.tabBarController?.tabBar.isHidden = false
+        self.lodingView.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+        self.lodingView.isHidden = true
     }
     
     func setNavigationBarClear() {
@@ -213,13 +220,15 @@ class ViewController: UIViewController {
     
     func imageSearch(selectedImage: UIImage) {
         ImageUploadService.postImage(image: selectedImage) { (value) in
+            
+
             if value.food_name == "머드쉐이크 초콜릿" { //X
                 let vc = UIStoryboard(name: "ImageSearch", bundle: nil).instantiateViewController(withIdentifier: "ImageSearchXViewController") as! ImageSearchXViewController
                 
                 vc.products = value
                 vc.productImage = selectedImage
                 vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
+                self.present(vc, animated: false, completion: nil)
                 print(value)
                 
             } else if value.food_name == "블루문 벨지움 화이트" {
@@ -228,7 +237,7 @@ class ViewController: UIViewController {
                 vc.products = value
                 vc.productImage = selectedImage
                 vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
+                self.present(vc, animated: false, completion: nil)
                 print(value)
                 
             } else if value.food_name == "수미칩 오리지널" {
@@ -237,7 +246,7 @@ class ViewController: UIViewController {
                 vc.products = value
                 vc.productImage = selectedImage
                 vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
+                self.present(vc, animated: false, completion: nil)
                 print(value)
             } else if value.food_name == "버드와이저" {
                 let vc = UIStoryboard(name: "ImageSearch", bundle: nil).instantiateViewController(withIdentifier: "ImageSearchViewController") as! ImageSearchViewController
@@ -245,7 +254,7 @@ class ViewController: UIViewController {
                 vc.products = value
                 vc.productImage = selectedImage
                 vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
+                self.present(vc, animated: false, completion: nil)
                 print(value)
             } else if value.food_name == "포카칩 어니언" { //X
                 let vc = UIStoryboard(name: "ImageSearch", bundle: nil).instantiateViewController(withIdentifier: "ImageSearchXViewController") as! ImageSearchXViewController
@@ -261,7 +270,7 @@ class ViewController: UIViewController {
                 vc.products = value
                 vc.productImage = selectedImage
                 vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
+                self.present(vc, animated: false, completion: nil)
                 print(value)
             } else {
                 //TODO: 에러 처리
@@ -376,11 +385,20 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
 
             self.imageSearch(selectedImage: editedImage)
             self.imagePickerFlag = true
+            
+            self.lodingView.isHidden = false
+            
+            self.productImageView.image = editedImage
+            self.gifImageView.loadGif(name: "imgloading")
 
         } else if let selectedImage = info[.originalImage] as? UIImage {
             
             self.imageSearch(selectedImage: selectedImage)
             self.imagePickerFlag = true
+            
+            self.lodingView.isHidden = false
+            self.productImageView.image = selectedImage
+            self.gifImageView.loadGif(name: "imgloading")
         }
         
         self.dismiss(animated: true) {
