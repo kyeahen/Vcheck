@@ -77,7 +77,7 @@ class ImageSearchViewController: UIViewController, CAAnimationDelegate {
         if products?.food_name == "블루문 벨지움 화이트" {
             productImageView.image = UIImage(named: "imgsearch_product_three_img")
             rateImageView.image = UIImage(named: "imgsearch_product_five_evaluation")
-            detailImageView.image = UIImage(named: "imgsearch_detailed_product_three_ingredient")
+            detailImageView.image = UIImage(named: "imgsearch_product_three_ingredient")
             reviewButton.titleLabel?.text = "2개의 후기 보기"
             
         } else if products?.food_name == "수미칩 오리지널" {
