@@ -44,6 +44,10 @@ class ImageSearchViewController: UIViewController, CAAnimationDelegate {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.gifImageView.image = UIImage(named: "o1")
+    }
+    
     func setGif() {
         gifImageView.image = gif
         gifImageView.animationDuration = gif!.duration
@@ -70,23 +74,34 @@ class ImageSearchViewController: UIViewController, CAAnimationDelegate {
     }
     
     func setData() {
-        nameLabel.text = products?.food_name
+        
         brandLabel.text = products?.brand_name
         prevImageView.image = productImage
         
         if products?.food_name == "블루문 벨지움 화이트" {
+            nameLabel.text =
+            """
+            블루문
+            벨지움화이트
+            """
             productImageView.image = UIImage(named: "imgsearch_product_three_img")
             rateImageView.image = UIImage(named: "imgsearch_product_five_evaluation")
             detailImageView.image = UIImage(named: "imgsearch_product_three_ingredient")
             reviewButton.titleLabel?.text = "2개의 후기 보기"
             
         } else if products?.food_name == "수미칩 오리지널" {
+            nameLabel.text =
+            """
+            수미칩
+            오리지널
+            """
             productImageView.image = UIImage(named: "imgsearch_product_one_img")
             rateImageView.image = UIImage(named: "imgsearch_product_one_evaluation")
             detailImageView.image = UIImage(named: "imgsearch_product_one_ingredient")
             reviewButton.titleLabel?.text = "23개의 후기 보기"
             
         } else if products?.food_name == "버드와이저" {
+            nameLabel.text = products?.food_name
             productImageView.image = UIImage(named: "imgsearch_product_two_img")
             rateImageView.image = UIImage(named: "imgsearch_product_two_evaluation")
             detailImageView.image = UIImage(named: "imgsearch_product_two_ingredient")

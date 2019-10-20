@@ -48,6 +48,7 @@ struct ImageUploadService: APIService {
                         
                     //업로드 성공
                     case .success :
+                        print("ss")
                         
                         /* 아래의 if-let 구문은 옵셔널 타입을 안전하게 추출하기 위해 사용합니다.
                          Optional 타입이란 값이 있을 수도 없을 수도 있는 경우를 위한 타입입니다.
