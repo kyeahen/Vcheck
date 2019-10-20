@@ -82,6 +82,7 @@ class ImageSearchXViewController: UIViewController, CAAnimationDelegate {
             productImageView.image = UIImage(named: "imgsearch_product_six_img")
             xLabel.text = "피하는 성분 1개 포함"
             xDetailLabel.text = "우유 성분 포함"
+            xImageView.image = UIImage(named: "imgsearch_milk_img")
             etcImageView.image = UIImage(named: "imgsearch_product_six_recommendation")
             xImageView.image = UIImage(named: "imgsearch_milk_img")
             
@@ -89,6 +90,7 @@ class ImageSearchXViewController: UIViewController, CAAnimationDelegate {
             productImageView.image = UIImage(named: "imgsearch_product_four_img")
             xLabel.text = "피하는 성분 1개 포함"
             xDetailLabel.text = "우유 성분 포함"
+            xImageView.image = UIImage(named: "imgsearch_milk_img")
             etcImageView.image = UIImage(named: "imgsearch_product_four_recommendation")
             xImageView.image = UIImage(named: "imgsearch_milk_img")
             
@@ -102,6 +104,7 @@ class ImageSearchXViewController: UIViewController, CAAnimationDelegate {
             productImageView.image = UIImage(named: "imgsearch_product_five_img")
             xLabel.text = "피하는 성분 2개 포함"
             xDetailLabel.text = "닭고기, 쇠고기 성분 포함"
+            xImageView.image = UIImage(named: "imgsearch_meat_img")
             etcImageView.image = UIImage(named: "imgsearch_product_five_recommendation")
             xImageView.image = UIImage(named: "imgsearch_meat_img")
             xImageView2.image = UIImage(named: "imgsearch_chicken_img")

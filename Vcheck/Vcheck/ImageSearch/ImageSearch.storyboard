@@ -352,7 +352,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgsearch_detailed_product_one_review" translatesAutoresizingMaskIntoConstraints="NO" id="9n3-Z1-i1b">
-                                            <rect key="frame" x="0.0" y="212" width="414" height="1093"/>
+                                            <rect key="frame" x="0.0" y="212" width="414" height="546.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수미칩 오리지널" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tv-ya-V1Q">
                                             <rect key="frame" x="20" y="71" width="121" height="23"/>
@@ -374,7 +374,7 @@
                                             </constraints>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVr-mH-Jg5">
-                                            <rect key="frame" x="358" y="22" width="36" height="16"/>
+                                            <rect key="frame" x="376" y="22" width="18" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="Xep-KZ-S2g"/>
                                             </constraints>
@@ -447,7 +447,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgsearch_detailed_product_one_ingredient" translatesAutoresizingMaskIntoConstraints="NO" id="D7O-ry-XiU">
-                                <rect key="frame" x="0.0" y="149" width="414" height="573"/>
+                                <rect key="frame" x="0.0" y="149" width="414" height="286.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFn-RE-SRI">
                                 <rect key="frame" x="375" y="72" width="16" height="16"/>
@@ -572,10 +572,9 @@
                                         <rect key="frame" x="216" y="204.5" width="61" height="61"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AMM-nN-Y2L">
-                                        <rect key="frame" x="287" y="204.5" width="61" height="61"/>
+                                        <rect key="frame" x="156" y="204.5" width="192" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="IcQ-ey-bBf"/>
-                                            <constraint firstAttribute="width" secondItem="AMM-nN-Y2L" secondAttribute="height" multiplier="1:1" id="tvv-NB-Ipj"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="38r-ao-KaU">
@@ -604,7 +603,9 @@
                                     <constraint firstItem="zyg-qf-ILn" firstAttribute="leading" secondItem="AKT-j8-TeR" secondAttribute="leading" id="F4T-Ot-ZPU"/>
                                     <constraint firstItem="AKT-j8-TeR" firstAttribute="top" secondItem="3XR-AC-hu4" secondAttribute="top" constant="10" id="IJb-mF-OuS"/>
                                     <constraint firstItem="Uov-Lk-O86" firstAttribute="top" secondItem="D8Z-Wb-xfE" secondAttribute="bottom" constant="25" id="IyH-hR-EFa"/>
+
                                     <constraint firstItem="1rP-s8-CX2" firstAttribute="top" secondItem="AMM-nN-Y2L" secondAttribute="top" id="Ljh-1q-n3F"/>
+
                                     <constraint firstAttribute="trailing" secondItem="AKT-j8-TeR" secondAttribute="trailing" constant="40" id="Nkb-8T-XRO"/>
                                     <constraint firstItem="AKT-j8-TeR" firstAttribute="leading" secondItem="3XR-AC-hu4" secondAttribute="trailing" constant="18" id="OJj-x6-3gP"/>
                                     <constraint firstItem="wXv-6l-Nh5" firstAttribute="top" secondItem="AMM-nN-Y2L" secondAttribute="bottom" constant="20" id="P3K-EQ-Z33"/>
@@ -695,7 +696,9 @@
                                         <rect key="frame" x="0.0" y="120" width="414" height="656"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="0Gf-nZ-LOZ" secondAttribute="bottom" constant="120" id="5By-g7-qmE"/>
                                     <constraint firstItem="0Gf-nZ-LOZ" firstAttribute="top" secondItem="UGz-cZ-zHB" secondAttribute="top" constant="120" id="FEM-db-lbY"/>

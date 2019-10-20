@@ -52,11 +52,9 @@ class ViewController: UIViewController {
     
     let lasts: [UIImage] = [
         UIImage(named: "home_interest_one")!,
-        UIImage(named: "home_interest_one")!,
-        UIImage(named: "home_interest_one")!,
-        UIImage(named: "home_interest_one")!,
-        UIImage(named: "home_interest_one")!,
-        UIImage(named: "home_interest_one")!
+        UIImage(named: "home_interest_two")!,
+        UIImage(named: "home_interest_three")!,
+        UIImage(named: "home_interest_four")!
     ]
     
     var timer = Timer()
@@ -70,11 +68,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchNameLabel: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!
     
+    @IBOutlet weak var bbb: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        bbb.layer.zPosition = 100
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
 
         setNavigationBarClear()
@@ -390,7 +390,9 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         
         if let selectedImage = info[.originalImage] as? UIImage {
             
+
             self.productImageView.image = selectedImage
+
             self.imageSearch(selectedImage: selectedImage)
             self.imagePickerFlag = true
             
