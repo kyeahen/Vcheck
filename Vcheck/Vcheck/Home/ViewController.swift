@@ -103,11 +103,13 @@ class ViewController: UIViewController {
         productNameLabel.text = "최근 \(name)님 관심 상품이에요"
         self.tabBarController?.tabBar.isHidden = false
         self.lodingView.isHidden = true
+        imagePicker.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
         self.lodingView.isHidden = true
+        self.gifImageView.image = UIImage(named: "")
     }
     
     func setNavigationBarClear() {
@@ -273,8 +275,9 @@ class ViewController: UIViewController {
                 self.present(vc, animated: false, completion: nil)
                 print(value)
             } else {
-                //TODO: 에러 처리
+                self.simpleAlert(title: "이미지 검색 실패", message: "상품이 전체적으로 잘 보이게 찍어주세요:)")
             }
+            
         }
     }
     
@@ -357,16 +360,17 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             self.imagePicker.sourceType = .photoLibrary
             self.imagePicker.delegate = self
-            self.imagePicker.allowsEditing = true
+//            self.imagePicker.allowsEditing = true
             self.present(self.imagePicker, animated: true, completion: { print("이미지 피커 나옴") })
         }
     }
     
     //Method : 카메라를 여는 함수
-    func openCamera() {
+    @objc func openCamera() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             self.imagePicker.sourceType = .camera
             self.imagePicker.delegate = self
+//            self.imagePicker.allowsEditing = true
             self.present(self.imagePicker, animated: true, completion: { print("이미지 피커 나옴") })
         }
     }
@@ -381,27 +385,19 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        if let editedImage = info[.editedImage] as? UIImage {
-
-            self.imageSearch(selectedImage: editedImage)
-            self.imagePickerFlag = true
+        self.lodingView.isHidden = false
+        self.gifImageView.loadGif(name: "imgloading")
+        
+        if let selectedImage = info[.originalImage] as? UIImage {
             
-            self.lodingView.isHidden = false
-            
-            self.productImageView.image = editedImage
-            self.gifImageView.loadGif(name: "imgloading")
-
-        } else if let selectedImage = info[.originalImage] as? UIImage {
-            
+            self.productImageView.image = selectedImage
             self.imageSearch(selectedImage: selectedImage)
             self.imagePickerFlag = true
             
-            self.lodingView.isHidden = false
-            self.productImageView.image = selectedImage
-            self.gifImageView.loadGif(name: "imgloading")
+            print("sel")
         }
         
-        self.dismiss(animated: true) {
+        picker.dismiss(animated: true) {
             print("이미지 피커 사라짐")
         }
     }

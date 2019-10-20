@@ -374,7 +374,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="A5z-om-NLr" firstAttribute="top" secondItem="ppZ-Gd-jBb" secondAttribute="top" id="35c-WY-Si1"/>
                                                     <constraint firstItem="8f8-Ed-ZOx" firstAttribute="centerX" secondItem="A5z-om-NLr" secondAttribute="centerX" id="38D-rw-Hd5"/>
@@ -456,6 +456,7 @@
                             <constraint firstItem="ppZ-Gd-jBb" firstAttribute="top" secondItem="oTc-pm-lmn" secondAttribute="top" constant="-64" id="dpi-rl-iTl"/>
                             <constraint firstItem="HKS-ju-zOj" firstAttribute="top" secondItem="ZHp-dC-nuY" secondAttribute="top" constant="-44" id="yyL-ef-6HY"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Zh-DH-TBP"/>
                     </view>
                     <size key="freeformSize" width="414" height="2200"/>
                     <connections>

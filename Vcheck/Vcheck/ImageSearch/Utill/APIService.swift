@@ -27,6 +27,6 @@ extension APIService {
     아래의 메소드를 정의하여 조금더 편리하게 통신할 수 있도록 합니다.
      */
     static func url(_ path: String) -> String {
-        return "http://localhost:3000/" + path
+        return "http://ec2-13-125-248-229.ap-northeast-2.compute.amazonaws.com:3000/" + path
     }
 }

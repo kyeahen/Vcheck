@@ -114,7 +114,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="imgsearch_more_arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pJg-MC-Nf5">
-                                        <rect key="frame" x="346" y="206.5" width="8" height="11"/>
+                                        <rect key="frame" x="346" y="201" width="8" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="8" id="eGX-8f-UeX"/>
                                         </constraints>
@@ -152,7 +152,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="imgsearch_more_arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-jX-mYH">
-                                        <rect key="frame" x="346" y="380.5" width="8" height="11"/>
+                                        <rect key="frame" x="346" y="375" width="8" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="8" id="dT0-Zu-fNz"/>
                                         </constraints>
@@ -568,6 +568,9 @@
                                         <color key="textColor" red="0.21590030190000001" green="0.2272967696" blue="0.23529565329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1rP-s8-CX2">
+                                        <rect key="frame" x="216" y="204.5" width="61" height="61"/>
+                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AMM-nN-Y2L">
                                         <rect key="frame" x="287" y="204.5" width="61" height="61"/>
                                         <constraints>
@@ -594,18 +597,21 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="38r-ao-KaU" secondAttribute="trailing" constant="38" id="37S-bd-d03"/>
+                                    <constraint firstItem="1rP-s8-CX2" firstAttribute="width" secondItem="AMM-nN-Y2L" secondAttribute="width" id="3Fh-hz-VVF"/>
                                     <constraint firstItem="3XR-AC-hu4" firstAttribute="top" secondItem="bIt-9T-pX4" secondAttribute="top" constant="46" id="9io-V5-RO7"/>
                                     <constraint firstItem="GcE-bh-RsR" firstAttribute="top" secondItem="Uov-Lk-O86" secondAttribute="bottom" constant="12" id="DAL-QH-feT"/>
                                     <constraint firstItem="1Q8-zR-b7c" firstAttribute="top" secondItem="wXv-6l-Nh5" secondAttribute="bottom" constant="22" id="Dyx-Ne-SJt"/>
                                     <constraint firstItem="zyg-qf-ILn" firstAttribute="leading" secondItem="AKT-j8-TeR" secondAttribute="leading" id="F4T-Ot-ZPU"/>
                                     <constraint firstItem="AKT-j8-TeR" firstAttribute="top" secondItem="3XR-AC-hu4" secondAttribute="top" constant="10" id="IJb-mF-OuS"/>
                                     <constraint firstItem="Uov-Lk-O86" firstAttribute="top" secondItem="D8Z-Wb-xfE" secondAttribute="bottom" constant="25" id="IyH-hR-EFa"/>
+                                    <constraint firstItem="1rP-s8-CX2" firstAttribute="top" secondItem="AMM-nN-Y2L" secondAttribute="top" id="Ljh-1q-n3F"/>
                                     <constraint firstAttribute="trailing" secondItem="AKT-j8-TeR" secondAttribute="trailing" constant="40" id="Nkb-8T-XRO"/>
                                     <constraint firstItem="AKT-j8-TeR" firstAttribute="leading" secondItem="3XR-AC-hu4" secondAttribute="trailing" constant="18" id="OJj-x6-3gP"/>
                                     <constraint firstItem="wXv-6l-Nh5" firstAttribute="top" secondItem="AMM-nN-Y2L" secondAttribute="bottom" constant="20" id="P3K-EQ-Z33"/>
                                     <constraint firstItem="D8Z-Wb-xfE" firstAttribute="leading" secondItem="bIt-9T-pX4" secondAttribute="leading" constant="20" id="PP0-Po-qEh"/>
                                     <constraint firstItem="zyg-qf-ILn" firstAttribute="top" secondItem="AKT-j8-TeR" secondAttribute="bottom" constant="15" id="dYY-fs-bId"/>
                                     <constraint firstAttribute="height" constant="510" id="efd-Iz-vla"/>
+                                    <constraint firstItem="1rP-s8-CX2" firstAttribute="bottom" secondItem="AMM-nN-Y2L" secondAttribute="bottom" id="gVO-16-gvB"/>
                                     <constraint firstItem="38r-ao-KaU" firstAttribute="top" secondItem="1Q8-zR-b7c" secondAttribute="bottom" constant="26" id="guZ-vP-NFA"/>
                                     <constraint firstItem="wXv-6l-Nh5" firstAttribute="trailing" secondItem="D8Z-Wb-xfE" secondAttribute="trailing" id="h0d-cs-1Z9"/>
                                     <constraint firstItem="Uov-Lk-O86" firstAttribute="leading" secondItem="bIt-9T-pX4" secondAttribute="leading" constant="24" id="hBv-6y-2TM"/>
@@ -618,6 +624,7 @@
                                     <constraint firstItem="wXv-6l-Nh5" firstAttribute="top" secondItem="GcE-bh-RsR" secondAttribute="bottom" constant="28" id="rqq-Of-zDJ"/>
                                     <constraint firstItem="3XR-AC-hu4" firstAttribute="leading" secondItem="bIt-9T-pX4" secondAttribute="leading" constant="40" id="uBM-3M-bPm"/>
                                     <constraint firstItem="1Q8-zR-b7c" firstAttribute="leading" secondItem="Uov-Lk-O86" secondAttribute="leading" id="uCn-Nl-4Oj"/>
+                                    <constraint firstItem="AMM-nN-Y2L" firstAttribute="leading" secondItem="1rP-s8-CX2" secondAttribute="trailing" constant="10" id="wbm-FL-LtM"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="NO"/>
@@ -688,7 +695,7 @@
                                         <rect key="frame" x="0.0" y="120" width="414" height="656"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="0Gf-nZ-LOZ" secondAttribute="bottom" constant="120" id="5By-g7-qmE"/>
                                     <constraint firstItem="0Gf-nZ-LOZ" firstAttribute="top" secondItem="UGz-cZ-zHB" secondAttribute="top" constant="120" id="FEM-db-lbY"/>
@@ -745,6 +752,7 @@
                         <outlet property="productImageView" destination="3XR-AC-hu4" id="mfr-42-F2m"/>
                         <outlet property="xDetailLabel" destination="GcE-bh-RsR" id="e2t-wD-nfg"/>
                         <outlet property="xImageView" destination="AMM-nN-Y2L" id="A1U-gA-Kbu"/>
+                        <outlet property="xImageView2" destination="1rP-s8-CX2" id="4dJ-D8-848"/>
                         <outlet property="xLabel" destination="Uov-Lk-O86" id="6Pi-Ya-O4T"/>
                     </connections>
                 </viewController>
