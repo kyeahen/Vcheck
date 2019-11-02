@@ -143,7 +143,7 @@
                                     <constraint firstAttribute="width" constant="256" id="Ej8-LG-Y6v"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3C-qy-oCo">
                                 <rect key="frame" x="57" y="534" width="256" height="1"/>
@@ -187,13 +187,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dAK-Am-Vxv"/>
                     </view>
-                    <navigationItem key="navigationItem" title="결제 진행" id="YNi-P0-WMT">
-                        <barButtonItem key="rightBarButtonItem" image="x_gray_icon" id="Fjc-BX-H0i">
-                            <connections>
-                                <action selector="close:" destination="jof-Lj-DfZ" id="Jgc-g2-m5b"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="결제 진행" id="YNi-P0-WMT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bd-YW-a6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,45 +310,45 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-W8-v0H">
-                                <rect key="frame" x="55" y="240" width="20" height="22"/>
+                                <rect key="frame" x="52" y="246" width="20" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="RY2-ZS-j1D"/>
                                     <constraint firstAttribute="width" constant="20" id="pTJ-ks-wOu"/>
                                 </constraints>
-                                <state key="normal" image="payment_check_box_activated"/>
+                                <state key="normal" image="payment_check_box_inactivated"/>
                                 <connections>
                                     <action selector="check:" destination="CZO-vH-746" eventType="touchUpInside" id="stu-pT-HvV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGY-EE-Ucn">
-                                <rect key="frame" x="55" y="584" width="20" height="22"/>
+                                <rect key="frame" x="52" y="590" width="20" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="TnK-Gr-eYf"/>
                                     <constraint firstAttribute="width" constant="20" id="UKD-oY-uYE"/>
                                 </constraints>
-                                <state key="normal" image="payment_check_box_activated"/>
+                                <state key="normal" image="payment_check_box_inactivated"/>
                                 <connections>
                                     <action selector="check:" destination="CZO-vH-746" eventType="touchUpInside" id="zAd-O7-YQo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChR-DW-4nE">
-                                <rect key="frame" x="55" y="357" width="20" height="22"/>
+                                <rect key="frame" x="52" y="363" width="20" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="FLd-Ek-eNM"/>
                                     <constraint firstAttribute="height" constant="22" id="jlw-oh-Kd7"/>
                                 </constraints>
-                                <state key="normal" image="payment_check_box_activated"/>
+                                <state key="normal" image="payment_check_box_inactivated"/>
                                 <connections>
                                     <action selector="check:" destination="CZO-vH-746" eventType="touchUpInside" id="5Pj-wv-jqz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENf-Q9-E3S">
-                                <rect key="frame" x="55" y="469" width="20" height="22"/>
+                                <rect key="frame" x="52" y="475" width="20" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="3Yi-Ll-RIU"/>
                                     <constraint firstAttribute="height" constant="22" id="D47-Rj-gtW"/>
                                 </constraints>
-                                <state key="normal" image="payment_check_box_activated"/>
+                                <state key="normal" image="payment_check_box_inactivated"/>
                                 <connections>
                                     <action selector="check:" destination="CZO-vH-746" eventType="touchUpInside" id="uo6-h5-kTt"/>
                                 </connections>
@@ -369,7 +363,7 @@
                                 <color key="textColor" red="0.52941176469999995" green="0.55294117649999996" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6n-2o-p5V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6n-2o-p5V">
                                 <rect key="frame" x="212" y="684" width="8" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="E4F-hO-PH2"/>
@@ -416,8 +410,8 @@
                             <constraint firstItem="Kg5-ap-99r" firstAttribute="leading" secondItem="r6n-2o-p5V" secondAttribute="trailing" constant="1" id="7pD-Xd-FDY"/>
                             <constraint firstItem="xGY-EE-Ucn" firstAttribute="top" secondItem="ENf-Q9-E3S" secondAttribute="bottom" constant="93" id="7rI-bt-9M3"/>
                             <constraint firstItem="ChR-DW-4nE" firstAttribute="centerX" secondItem="cgV-W8-v0H" secondAttribute="centerX" id="AOG-U5-KrC"/>
-                            <constraint firstItem="cgV-W8-v0H" firstAttribute="leading" secondItem="8xm-Q5-zCp" secondAttribute="leading" constant="55" id="ETK-m9-mbN"/>
-                            <constraint firstItem="cgV-W8-v0H" firstAttribute="top" secondItem="8xm-Q5-zCp" secondAttribute="top" constant="152" id="FuW-7Y-3ic"/>
+                            <constraint firstItem="cgV-W8-v0H" firstAttribute="leading" secondItem="8xm-Q5-zCp" secondAttribute="leading" constant="52" id="ETK-m9-mbN"/>
+                            <constraint firstItem="cgV-W8-v0H" firstAttribute="top" secondItem="8xm-Q5-zCp" secondAttribute="top" constant="158" id="FuW-7Y-3ic"/>
                             <constraint firstItem="ENf-Q9-E3S" firstAttribute="top" secondItem="ChR-DW-4nE" secondAttribute="bottom" constant="90" id="GFT-wS-T2m"/>
                             <constraint firstItem="Lgn-PY-9y0" firstAttribute="centerX" secondItem="8xm-Q5-zCp" secondAttribute="centerX" id="KIp-gL-wGE"/>
                             <constraint firstItem="r6n-2o-p5V" firstAttribute="centerY" secondItem="IZd-XQ-L6x" secondAttribute="centerY" id="KxD-CG-GHS"/>
@@ -435,6 +429,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="gh1-6d-hC1"/>
                     <connections>
+                        <outlet property="b1" destination="cgV-W8-v0H" id="9fK-6P-fvH"/>
+                        <outlet property="b2" destination="ChR-DW-4nE" id="S4K-oa-TmH"/>
+                        <outlet property="b3" destination="ENf-Q9-E3S" id="pQA-cT-4ir"/>
+                        <outlet property="b4" destination="xGY-EE-Ucn" id="uFJ-lK-8Z2"/>
                         <outlet property="countLabel" destination="r6n-2o-p5V" id="Pzd-3g-3YT"/>
                         <outlet property="gifImage" destination="Lgn-PY-9y0" id="13Y-v3-v8q"/>
                         <segue destination="p1z-Ne-rsw" kind="show" id="bgw-QQ-vHC"/>
@@ -524,7 +522,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tae-BN-WEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3497" y="92"/>
+            <point key="canvasLocation" x="3477" y="92"/>
         </scene>
         <!--결제 완료-->
         <scene sceneID="9Ea-d8-Upa">
@@ -823,9 +821,9 @@
     <resources>
         <image name="payment_amount_icon" width="24" height="16.5"/>
         <image name="payment_card_one" width="293" height="194"/>
-        <image name="payment_check_box_activated" width="20" height="20"/>
+        <image name="payment_check_box_inactivated" width="20" height="20"/>
         <image name="payment_completion_illust" width="172" height="172"/>
-        <image name="payment_filtering_img" width="338" height="545.5"/>
+        <image name="payment_filtering_img" width="338" height="555.5"/>
         <image name="payment_list_img" width="340" height="256"/>
         <image name="payment_main_illust" width="133" height="110"/>
         <image name="payment_number_icon" width="21" height="19.5"/>
