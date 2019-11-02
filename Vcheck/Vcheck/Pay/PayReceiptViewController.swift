@@ -23,8 +23,11 @@ class PayReceiptViewController: UIViewController {
 
     @IBAction func pay(_ sender: Any) {
         if #available(iOS 13.0, *) {
-            let navi = storyboard?.instantiateViewController(identifier: "payCardNavi") as! UINavigationController
-            present(navi, animated: true, completion: nil)
+            //let navi = storyboard?.instantiateViewController(identifier: "payCardNavi") as! UINavigationController
+            let vc = storyboard?.instantiateViewController(identifier: "PayCardViewController") as! PayCardViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(vc, animated: true)
+            //present(vc, animated: true, completion: nil)
         } else {
             // Fallback on earlier versions
         }

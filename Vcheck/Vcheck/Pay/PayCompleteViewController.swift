@@ -14,6 +14,7 @@ class PayCompleteViewController: UIViewController {
         super.viewDidLoad()
         
         setNavigationBar()
+        setBackBtn()
 
 
         // Do any additional setup after loading the view.

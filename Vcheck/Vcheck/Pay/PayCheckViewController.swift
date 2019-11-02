@@ -14,13 +14,19 @@ class PayCheckViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var gifImage: UIImageView!
     
-    var count = 4{
+    @IBOutlet weak var b1: UIButton!
+    @IBOutlet weak var b2: UIButton!
+    @IBOutlet weak var b3: UIButton!
+    @IBOutlet weak var b4: UIButton!
+    var count = 0{
         didSet{
             countLabel.text = "\(count)"
         }
     }
     
-    let im : UIImage = #imageLiteral(resourceName: "payment_check_box_activated")
+    let active : UIImage = #imageLiteral(resourceName: "payment_check_box_activated")
+    let inactive: UIImage = #imageLiteral(resourceName: "payment_check_box_inactivated")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +40,10 @@ class PayCheckViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.gifImage.isHidden = true
         
+        b1.setImage(inactive, for: .normal)
+        b2.setImage(inactive, for: .normal)
+        b3.setImage(inactive, for: .normal)
+        b4.setImage(inactive, for: .normal)
         
     }
     @IBAction func pay(_ sender: Any) {
@@ -49,11 +59,11 @@ class PayCheckViewController: UIViewController {
     
     @IBAction func check(_ sender: UIButton) {
         if let image = sender.currentImage{
-            if image == #imageLiteral(resourceName: "payment_check_box_inactivated"){
-                sender.setImage(#imageLiteral(resourceName: "payment_check_box_activated"), for: .normal)
+            if image == inactive{
+                sender.setImage(UIImage(named: "payment_check_box_activated"), for: .normal)
                 count += 1
             }else{
-                sender.setImage(#imageLiteral(resourceName: "payment_check_box_inactivated"), for: .normal)
+                sender.setImage(UIImage(named: "payment_check_box_inactivated"), for: .normal)
                 count -= 1
             }
         }else{
